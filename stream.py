@@ -16,8 +16,8 @@
 
 import sys
 import logging
-import strat
-import indic
+import strategie
+import indicateur
 import threading
 import time
 import traceback
@@ -257,7 +257,6 @@ class LSClient(object):
 		stream_line = self._read_from_stream()
 		self._handle_stream(stream_line)
 
-	
 	def _handle_stream(self, stream_line):
 		if stream_line == OK_CMD:
 			# Parsing session inkion
@@ -277,14 +276,14 @@ class LSClient(object):
 			self._stream_connection_thread = threading.Thread(
 				name="STREAM-CONN-THREAD-{0}".format(self._bind_counter),
 				target=self._receive
-			)
+				)
 			self._stream_connection_thread.setDaemon(True)
+			
 			self._other_thread = threading.Thread(
 				name ="manager-{0}".format(self._bind_counter),
 				target=self.manager
 				)
 			self._other_thread.setDaemon(True)
-
 
 			self._stream_connection_thread.start()
 			self._other_thread.start()
@@ -453,39 +452,51 @@ class LSClient(object):
 	def manager(self):
 		""" Trade manager , ouvre et ferme les trades,
 			 c'est un thread a part de LSlistener """
-		
 		if self.managerfirstrun :
-			time.sleep(62)
+			# 302 sec = 5min
+			time.sleep(Var.AlgoInitialTime) 
 			self.managerfirstrun = False
 			self.manager()
 		else :
-			print("manager ON")
+			print("strategie activé")
 			while 1:
-				# i : numero du dernier prix Enregistré
-				time.sleep(0.5)
+				time.sleep(0.7)
 				i = (len(Var.price["Bid"])-1)
-				strat.strategie(i)
+				heure = Var.price["Time"][i]
+				bid = Var.price["Bid"][i]
+				bid0 = Var.price["Bid"][i-1]
+				ask = Var.price["Ask"][i]
+				ask0 = Var.price["Ask"][i-1]
+				strategie.strategie(BidAsk=[bid,ask],
+									Price_0=[bid0,ask0], 
+									temps=heure,
+									backtest=Var.backtest)
 
 # A simple function acting as a Subscription listener
 def on_item_update(item_update):
-	
+
 	# Chart renvoie time en temps unix :
 	t1 = datetime.datetime.utcfromtimestamp(int(item_update["values"]["UTM"])/ 1e3)
 	temps = t1.strftime('%H:%M:%S')
-	
-	Var.price["Time"].append(temps)
-	Var.price["Bid"].append(item_update["values"]["BID_CLOSE"])
-	Var.price["Ask"].append(item_update["values"]["OFR_CLOSE"])
-	
-	#valeur d'affichage
-	Var.prix.append(float(item_update["values"]["BID_CLOSE"]))
-	Var.datePrix.append(t1)
-	#print(Var.price["Bid"][len(Var.price["Time"])-1])
+	bid = item_update["values"]["BID_CLOSE"]
+	ask = item_update["values"]["OFR_CLOSE"]
 
-	indic.indicateur(len(Var.price["Time"])-1)
+	# Vers 2h du matin, 
+	# bid ou ask tend vers N/A et donc plante le systeme :
+	try:
+		Var.price["Time"].append(temps)
+		Var.price["Bid"].append(bid)
+		Var.price["Ask"].append(ask)
+
+		Midpoint = ((float(bid)+float(ask))/2)
+		#Calcul d'indicateurs
+		indicateur.indicateur(Midpoint=Midpoint,temps=t1)
+
+	except:
+		print("error")	
 
 def streaming(data):
-
+	# OLD
 	epic="CS.D.EURUSD.MINI.IP"
 	timing="SECOND"
 
@@ -588,8 +599,7 @@ def archive():
 		out.close()
 
 
-
 if __name__=='__main__' :
-	streaming(rest.ig().Auth(Var.login,Var.password))
-	
+	streaming(rest.ig().Auth('fleuros','Trade4Lyfe'))
+
 logging.basicConfig(level=logging.INFO)

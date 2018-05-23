@@ -1,0 +1,38 @@
+﻿
+
+Idées:
+	- Reduction Endomorphisme sur Crypto selon similarité des prix
+	
+	- model Offre/Demande Gaz naturel
+
+	- Trading Algorithmique par rapport avis de cramer sur cnbc
+		- nom: BigBrother Watching Cramer (?)
+		- GENSIM + CC Audio transcript cnbcPro
+		- Site Web avec flux et graph (performance)
+		- input de MoneyManagement
+		- RoboAdviser basé sur cramer( ou gartman)
+		- Probabilité/confiance du systeme
+			- confiance sur lexique (gensim+ CC transcript)
+			- confiance cross data (Visuel, audio, couleur)
+	
+
+
+
+BUG: 
+	- rest.ig().closeOrders() n'est pas confirmé , Done
+	- 
+
+
+Taches:
+		1. codé Backtest module
+			- Date de Debut/Fin
+			- Archive/resultat CSV/excel
+				- Date Ouverture/Cloture
+				- Signal Ouverture/Fermeture
+				- Price Action entre Ouverture/Fermeture
+
+		2. Indicateur HeikinAshi ( Heure et Minutes)
+			- HLOC
+			- compte des bougie Verte/rouge ( seuil de tolerance)
+
+		3. refresh Auto toute les x seconde ou deconnexion

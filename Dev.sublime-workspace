@@ -1,0 +1,1032 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"self",
+				"self"
+			],
+			[
+				"open",
+				"opendealscan\tstatement"
+			],
+			[
+				"bac",
+				"backtestdealscan2\tstatement"
+			],
+			[
+				"bid",
+				"bidClose"
+			],
+			[
+				"Dat",
+				"datetime\tmodule"
+			],
+			[
+				"t",
+				"timedelta\tclass"
+			],
+			[
+				"b",
+				"backtestdealscan\tstatement"
+			],
+			[
+				"x",
+				"x\tstatement"
+			],
+			[
+				"dat",
+				"datetime\tmodule"
+			],
+			[
+				"las",
+				"lastDatetime\tstatement"
+			],
+			[
+				"Em",
+				"emaHeureBacktest\tstatement"
+			],
+			[
+				"emaH",
+				"emaHeureBacktest\tstatement"
+			],
+			[
+				"ini",
+				"initialSize\tstatement"
+			],
+			[
+				"pa",
+				"pauseordre"
+			],
+			[
+				"o",
+				"ordrePassee\tstatement"
+			],
+			[
+				"last",
+				"lastMinute\tstatement"
+			],
+			[
+				"api",
+				"api\tstatement"
+			],
+			[
+				"Da",
+				"Date2\tparam"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"E",
+				"Exception\tclass"
+			],
+			[
+				"ER",
+				"EOFError\tclass"
+			],
+			[
+				"ordre",
+				"ordrePassee\tstatement"
+			],
+			[
+				"ord",
+				"ordrePassee\tstatement"
+			],
+			[
+				"as",
+				"askbefore\tstatement"
+			],
+			[
+				"Data",
+				"DataFrame"
+			],
+			[
+				"cs",
+				"csvformatdict"
+			],
+			[
+				"w",
+				"write\tfunction"
+			],
+			[
+				"ask",
+				"ask0\tstatement"
+			],
+			[
+				"minu",
+				"minute"
+			],
+			[
+				"Heu",
+				"heure"
+			],
+			[
+				"he",
+				"HeureUpgrade\tstatement"
+			],
+			[
+				"Bid",
+				"bid0\tstatement"
+			],
+			[
+				"Date",
+				"DateF"
+			],
+			[
+				"sell",
+				"sellPrice"
+			],
+			[
+				"M",
+				"Midpoint\tparam"
+			],
+			[
+				"Min",
+				"MinUpgrade\tstatement"
+			],
+			[
+				"date",
+				"datetime\tclass"
+			],
+			[
+				"str",
+				"strftime\tfunction"
+			],
+			[
+				"time",
+				"timedelta\tclass"
+			],
+			[
+				"emac",
+				"emachart\tstatement"
+			],
+			[
+				"ema",
+				"emataille"
+			],
+			[
+				"cond",
+				"condition2\tstatement"
+			],
+			[
+				"app",
+				"app2\tstatement"
+			],
+			[
+				"new",
+				"new_window\tfunction"
+			],
+			[
+				"page",
+				"page2\tclass"
+			],
+			[
+				"main",
+				"mainloop"
+			],
+			[
+				"Ask",
+				"Ask"
+			],
+			[
+				"plt",
+				"plt\tmodule"
+			],
+			[
+				"ac",
+				"access_token_secret"
+			],
+			[
+				"cnsu",
+				"consumer_secret"
+			],
+			[
+				"pr",
+				"profit\tstatement"
+			],
+			[
+				"Fake",
+				"FakeId\tstatement"
+			],
+			[
+				"a",
+				"append\tfunction"
+			],
+			[
+				"Fa",
+				"FakeDeal\tstatement"
+			],
+			[
+				"A",
+				"Ask"
+			],
+			[
+				"set",
+				"setDaemon"
+			],
+			[
+				"B",
+				"B1"
+			],
+			[
+				"mer",
+				"mergeStrategy"
+			],
+			[
+				"ser",
+				"server_response"
+			],
+			[
+				"tr",
+				"try\tTry/Except"
+			],
+			[
+				"p",
+				"print"
+			],
+			[
+				"pri",
+				"print"
+			],
+			[
+				"ti",
+				"Time"
+			],
+			[
+				"fie",
+				"field_names"
+			],
+			[
+				"ut",
+				"utf-8"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"adap",
+				"adapter_set"
+			],
+			[
+				"LSD",
+				"LSData"
+			],
+			[
+				"stream",
+				"streamingToken"
+			],
+			[
+				"account",
+				"accountId"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"r",
+				"raw_input"
+			],
+			[
+				"ess",
+				"essaiPnl"
+			],
+			[
+				"non",
+				"None"
+			],
+			[
+				"serv",
+				"serverAddr"
+			],
+			[
+				"Aut",
+				"Auth"
+			],
+			[
+				"Au",
+				"Authorization"
+			],
+			[
+				"url",
+				"url"
+			],
+			[
+				"error",
+				"errorCode"
+			],
+			[
+				"code",
+				"code"
+			],
+			[
+				"sta",
+				"status_code"
+			],
+			[
+				"data",
+				"data"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "strategie.py",
+			"settings":
+			{
+				"buffer_size": 4707,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "stream.py",
+			"settings":
+			{
+				"buffer_size": 17739,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "interface.py",
+			"settings":
+			{
+				"buffer_size": 2853,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rest.py",
+			"settings":
+			{
+				"buffer_size": 19048,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "indicateur.py",
+			"settings":
+			{
+				"buffer_size": 3277,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Var.py",
+			"settings":
+			{
+				"buffer_size": 1416,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sable.py",
+			"settings":
+			{
+				"buffer_size": 929,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 131.0,
+		"history":
+		[
+			"import tweepy",
+			"jupyter notebook",
+			"rest",
+			"exit()",
+			"ls",
+			"import rest",
+			"a",
+			"a= 2",
+			"import imp"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)"
+	],
+	"file_history":
+	[
+		"/Users/Boulton/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/Todo.txt",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/rest.py",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/strategie.py",
+		"/Users/Boulton/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Boulton/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/stream.py",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/sable.py",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/indicateur.py",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/interface.py",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/Var.py",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/archive/USDSEK2018-03-01T00-00-00_2018-03-01T01-00-00.json",
+		"/Users/Boulton/Desktop/payout.json",
+		"/Users/Boulton/Desktop/etc",
+		"/Users/Boulton/Google Drive/Market/python/stream.py",
+		"/Users/Boulton/Google Drive/python/fake-stream.py",
+		"/Users/Boulton/Google Drive/python/strat.py",
+		"/Users/Boulton/Google Drive/python/stream.py",
+		"/Users/Boulton/Google Drive/python/Var.py",
+		"/Users/Boulton/Google Drive/python/indic.py",
+		"/Users/Boulton/Google Drive/python/interface.py",
+		"/Users/Boulton/Google Drive/python/rest.py",
+		"/Users/Boulton/Desktop/python/stream.py",
+		"/Users/Boulton/Google Drive/python/etude.py",
+		"/Users/Boulton/Desktop/ig-markets-api-python-library-master/trading_ig/lightstreamer.py",
+		"/Users/Boulton/Desktop/ig-markets-api-python-library-master/trading_ig/rest.py",
+		"/Users/Boulton/Desktop/ig-markets-api-python-library-master/setup.py",
+		"/Users/Boulton/Desktop/ig-markets-api-python-library-master/trading_ig/config.py",
+		"/Users/Boulton/Google Drive/rest.py",
+		"/Users/Boulton/Google Drive/interface.py",
+		"/Users/Boulton/Google Drive/light.py",
+		"/Users/Boulton/Google Drive/python/hue.py",
+		"/Users/Boulton/Google Drive/python/ig.py",
+		"/Users/Boulton/Google Drive/python/brouillon23.json",
+		"/Users/Boulton/Google Drive/python/light.py",
+		"/Users/Boulton/Google Drive/stream.py",
+		"/Users/Boulton/Google Drive/Stream.py",
+		"/Users/Boulton/Google Drive/Rest.py",
+		"/Users/Boulton/Google Drive/ig.py",
+		"/Users/Boulton/Google Drive/yql.json",
+		"/Users/Boulton/Desktop/request1.json",
+		"/Volumes/NAS/hue.py",
+		"/Volumes/NAS-1/ig.py",
+		"/Users/Boulton/Desktop/Lightstreamer-example-StockList-client-python-master/src/stock_list_demo.py",
+		"/Volumes/NAS/brouillon23.json",
+		"/Volumes/NAS-1/hue.py",
+		"/Users/Boulton/Desktop/ig.py",
+		"/Users/Boulton/Desktop/krona.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"close",
+			"print",
+			"emaH",
+			"backtestdealscan2",
+			"backtestdealscan1",
+			"print",
+			"y",
+			"AlgoInitial",
+			"pep8",
+			"pep",
+			"ema",
+			"ematempsini",
+			"ematempsinit",
+			"print",
+			"DefaultStop",
+			"print",
+			"temps",
+			"ordrePassee",
+			"lastMinIndice",
+			"temps",
+			"ig",
+			"Var.emaH"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"folders":
+	[
+		{
+			"path": "U:sers\\Boulton\\Google Drive\\Market\\python\\Mini(1.2)"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "strategie.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1383,
+								1383
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 229.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "stream.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15042,
+								15042
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"rulers":
+							[
+								80
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6716.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "interface.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								734,
+								734
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"rulers":
+							[
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true,
+							"wrap_width": 0
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "rest.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14655,
+								14655
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1022.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "indicateur.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1190,
+								1190
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Var.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 308.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sable.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.504368839388,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 103.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 102.0
+	},
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"rest.py"
+			],
+			[
+				"in",
+				"indicateur.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Google Drive/Market/python/Mini(1.2)/interface.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		]
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 123.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
