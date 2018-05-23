@@ -3,34 +3,37 @@
 import requests
 import json
 import pprint
+import id
 import os.path
 import datetime
 import indicateur
 import strategie
 import time
 import Var
+import logging
 from jsonmerge import Merger
 import pandas as pd
-
+from pprint import pprint, pformat
 """
-	ToDo : 
+	ToDo :
 			- réecrire retrieve avec un while au lieu de if : for ...
 			- codé le Refresh Token apres 60 seconde ou en cas d'erreur 400
-			  enlever les if de reconnexion dans pnl , retrieve 
+			- enlever les if de reconnexion dans pnl , retrieve
 			- créer un schema pour les header ?
 			— epurer init !!!
 """
+logger = logging.getLogger()
 
 
 class ig:
 
-	def __init__(self):
+    def __init__(self):
 
-		self.essaiPnl = 0
-		self.passage2 = False
-		self.serverAddr = "https://demo-api.ig.com/gateway/deal" # <-serveur demo
-		
-		""" data = {
+        self.essaiPnl = 0
+        self.passage2 = False
+        self.serverAddr = "https://demo-api.ig.com/gateway/deal"  # <-serveur demo
+
+        """ data = {
 			'clientId': '',
 			'accountId': '',
 			'timezoneOffset': 1,
@@ -43,490 +46,506 @@ class ig:
 				'expires_in': ''
 				}
 			}
-		"""	
-		
-		self.Auth(Var.login,Var.password)
-		#print(Var.data)
-		
-	def Auth(self, login, password):
-		""" Procedure d'ID Oauth2 
 		"""
-		if Var.authentified == False :
-			print("AUTHENFICATION")
-			payloads = {"identifier": login ,
-						"password": password }
-			headers = {'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2",
-					   'Version': '3'}
-			url = self.serverAddr+"/session"
-			r = requests.post(url, data=json.dumps(payloads), headers=headers)
 
-			# resultat
-			#print(r.url) <--- debug/log
-			r.status_code
-			if r.status_code == 200:
-				
-				data = r.json()  # donnée Oauth pour prochaine requete
-				
-				#self.data redondant, peut etre remplacé par var
-				Var.authentified = True
-				Var.data = data
-				return Var.data
-			else:
-				print("Echec !")
-		else :
-			print("REFRESH")
-			Var.data = self.refresh(Var.data)
+        self.Auth(Var.login, Var.password)
+        # print(Var.data)
 
-	def refresh(self, data):
-		# Rafraichissement du Access token
-		url = self.serverAddr + "/session/refresh-token"
-		payloads = { "refresh_token" : data.get('oauthToken').get('refresh_token')}
-		head = { 'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2",
-				 'Version': '1', 'IG-ACCOUNT-ID': data.get('accountId')}
+    def Auth(self, login, password):
+        """ Procedure d'ID Oauth2 
+        """
+        if Var.authentified == False:
+            logger.info("AUTHENFICATION")
+            payloads = {"identifier": login,
+                        "password": password}
+            headers = {'X-IG-API-KEY': id.apiKey,
+                       'Version': '3'}
+            url = self.serverAddr + "/session"
+            r = requests.post(url, data=json.dumps(payloads), headers=headers)
 
-		r = requests.post(url, data=json.dumps(payloads), headers=head)
-	  
-		if r.status_code == 200 :
-			data['oauthToken']['access_token'] = r.json().get('access_token')
-			data['oauthToken']['refresh_token'] = r.json().get('refresh_token')
-			#print("Data-apres:") #"""DEBUG"""
-			#pprint.pprint(data)
-			return data
-		elif (r.status_code == 400 and self.passage2 == False) : # relance l'Auth
-			self.refresh(self.Auth())
-			print("Passage 2")
-			self.passage2 = True # pas sur de l'efficacité. A verifié !
-		else : #retour console
-			print("\n ERREUR serveur :")
-			print(r.status_code)
-			print("Detail: ")
-			return r.json()		
+            # resultat
+            #print(r.url) <--- debug/log
+            r.status_code
+            if r.status_code == 200:
 
-	def streamingToken(self, arg):
-		data = arg
-		LSData = {}
-		h1 = {'IG-ACCOUNT-ID': data.get('accountId'),
-			  'Authorization': data.get('oauthToken').get('token_type')+" "+data.get('oauthToken').get('access_token'),
-			  'Version': '1', 'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2" 
-			  }
-		url = self.serverAddr + "/session?fetchSessionTokens=true"
-		r = requests.get(url , headers =h1)
-		
-		LSData['addr'] = (r.json().get('lightstreamerEndpoint')).encode('utf8')
-		LSData['user'] = (r.json().get("accountId")).encode('utf8')
-		LSData['password'] = ("CST-"+r.headers.get('CST')+"|XST-"+r.headers.get('X-SECURITY-TOKEN'))
+                data = r.json()  # donnée Oauth pour prochaine requete
 
-		return LSData
+                # self.data redondant, peut etre remplacé par var
+                Var.authentified = True
+                Var.data = data
+                return Var.data
+            else:
+                logger.critical("Echec !")
+        else:
+            logger.info("REFRESH")
+            Var.data = self.refresh(Var.data)
 
-	def getcurrencycode(self, epic):
-		
-		data = Var.data
-		url= self.serverAddr+"/markets/"+epic
-		head={
-			'IG-ACCOUNT-ID': data.get('accountId'),
-			'Authorization': data.get('oauthToken').get('token_type')+" "+data.get('oauthToken').get('access_token'),
-			'Version': '3',
-			'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2"
-			}
-		r = requests.get(url, headers=head)
-		if r.status_code == 200:
-			raw = dict(r.json())
-			code = raw.get("instrument").get("currencies")[0].get("code")
-			return code
-		else :
-			print("Statut: "+r.status_code)
+    def refresh(self, data):
+        # Rafraichissement du Access token
+        url = self.serverAddr + "/session/refresh-token"
+        payloads = {"refresh_token": data.get(
+            'oauthToken').get('refresh_token')}
+        head = {'X-IG-API-KEY': id.apiKey,
+                'Version': '1', 'IG-ACCOUNT-ID': data.get('accountId')}
 
-	def marketId(self,epic):
+        r = requests.post(url, data=json.dumps(payloads), headers=head)
 
-		url = self.serverAddr+"/markets/"+epic
-			#print(url)
-		h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'),
-			  'Authorization': Var.data.get('oauthToken').get('token_type')+" "+Var.data.get('oauthToken').get('access_token'),
-			  'Version': '1', 'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2" 
-			}
+        if r.status_code == 200:
+            data['oauthToken']['access_token'] = r.json().get('access_token')
+            data['oauthToken']['refresh_token'] = r.json().get('refresh_token')
+            # print("Data-apres:") #"""DEBUG"""
+            # pprint.pprint(data)
+            return data
+        elif (r.status_code == 400 and self.passage2 == False):  # relance l'Auth
+            self.refresh(self.Auth())
+            print("Passage 2")
+            self.passage2 = True  # pas sur de l'efficacité. A verifié !
+        else:  # retour console
+            logger.error("Rest Token non rafraichit, {}".format(r.json()))
+            print(r.status_code)
+            return r.json()
 
-		r = requests.get(url, headers=h1)
-		#print (r.status_code)
-		marketId = r.json().get("instrument").get("marketId")
-		#print(marketId)
-		return marketId
+    def streamingToken(self, arg):
+        data = arg
+        LSData = {}
+        h1 = {'IG-ACCOUNT-ID': data.get('accountId'),
+              'Authorization': data.get('oauthToken').get('token_type') + " " + data.get('oauthToken').get('access_token'),
+              'Version': '1', 'X-IG-API-KEY': id.apiKey
+              }
+        url = self.serverAddr + "/session?fetchSessionTokens=true"
+        r = requests.get(url, headers=h1)
 
-	def IgClientPositions(self,epic):
+        LSData['addr'] = (r.json().get('lightstreamerEndpoint')).encode('utf8')
+        LSData['user'] = (r.json().get("accountId")).encode('utf8')
+        LSData['password'] = ("CST-" + r.headers.get('CST') +
+                              "|XST-" + r.headers.get('X-SECURITY-TOKEN'))
 
-		url = self.serverAddr + "/clientsentiment/" + str(self.marketId(epic))
+        return LSData
 
-		h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'),
-			  'Authorization': Var.data.get('oauthToken').get('token_type')+" "+Var.data.get('oauthToken').get('access_token'),
-			  'Version': '1', 'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2" 
-			  }
+    def getcurrencycode(self, epic):
 
-		r = requests.get(url, headers=h1)
-		raw = r.json()
-		if not r.status_code == 200 :
-			print("Erreur : ")
-			print(r.status_code)				
-		
-		Bullish = raw.get("longPositionPercentage")
-		Bearish = raw.get("shortPositionPercentage")
-		a = {"Bull":int(Bullish),"Bear":int(Bearish)}
-		#print(a)
-		return a
+        data = Var.data
+        url = self.serverAddr + "/markets/" + epic
+        head = {
+            'IG-ACCOUNT-ID': data.get('accountId'),
+            'Authorization': data.get('oauthToken').get('token_type') + " " + data.get('oauthToken').get('access_token'),
+            'Version': '3',
+            'X-IG-API-KEY': id.apiKey
+        }
+        r = requests.get(url, headers=head)
+        if r.status_code == 200:
+            raw = dict(r.json())
+            code = raw.get("instrument").get("currencies")[0].get("code")
+            return code
+        else:
+            logger.debug("currency code statut: " + str(r.status_code))
 
-	def pnl(self):
-		# fonction pour recuperer le PnL
-		url =  self.serverAddr+"/accounts"
-		
-		h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'),
-		  'Authorization': Var.data.get('oauthToken').get('token_type')+" "+Var.data.get('oauthToken').get('access_token'),
-		  'Version': '1', 'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2" 
-		  }
-		r = requests.get( url, headers=h1)
-		raw = r.json()
-		value= str
-		print(r.status_code)
-		print(raw)
-		
-		if r.status_code == 200 :
-			for x in range(len(raw['accounts'])):
-				print(raw['accounts'][x]['accountId'])
-				if raw['accounts'][x]['accountId'] == Var.data.get('accountId') :	 
-					value = str(raw['accounts'][x]['balance']['balance'])
-				else :
-					print("Id de compte non trouvé !")
-					print(r.status_code)
-			
-			return value
+    def marketId(self, epic):
 
-		elif r.status_code == 401 and self.essaiPnl < 1 :
-			Var.data = self.refresh(Var.data)
-			self.essaiPnl = self.essaiPnl + 1
-			self.pnl()
-		
-		else :
-			print("Erreur : ")
-			print(r.status_code)
+        url = self.serverAddr + "/markets/" + epic
+        # print(url)
+        h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'),
+              'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
+              'Version': '1', 'X-IG-API-KEY': id.apiKey
+              }
 
-	def retrieve(self, epic, dateF, dateT):
-		""" Par default resolution = MINUTE
-			date(UTC) format : "2017-MM-DDTHH:MM:SS"(string) 
-		"""
-		schema = {
-			"prices": [{"type": "object", "mergeStrategy": "append"}],
-			"instrumentType": "",
-			"metadata": {
-				"allowance": {},
-				"size": "",
-				"pageData": {
-					"pageSize": "",
-					"pageNumber": "",
-					"totalPages": ""
-					}
-				}
-			}
+        r = requests.get(url, headers=h1)
+        #print (r.status_code)
+        marketId = r.json().get("instrument").get("marketId")
+        # print(marketId)
+        return marketId
 
-		# standard get requests apres ID
-		h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'), 'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get(
-			'oauthToken').get('access_token'), 'Version': '3', 'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2"}
+    def IgClientPositions(self, epic):
 
-		resolution = 'MINUTE'
-		dateFrom = dateF.replace(":", "%3A")
-		dateTo = dateT.replace(":", "%3A")
-		pageSize = "100"
-		pageNumber = "1"
-		totalPages = ""
-		phrase = ""
+        url = self.serverAddr + "/clientsentiment/" + str(self.marketId(epic))
 
-		# DEBUG
-		print("\n" + "Headers: ")
-		pprint.pprint(h1)
+        h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'),
+              'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
+              'Version': '1', 'X-IG-API-KEY': id.apiKey
+              }
 
-		url1 = [ self.serverAddr, "/prices/", epic, "?resolution=", resolution,
-				"&from=", dateFrom, "&to=", dateTo, "&pageSize=", pageSize, "&pageNumber=", pageNumber]
-		r1 = requests.get(phrase.join(url1), headers=h1)
+        r = requests.get(url, headers=h1)
+        raw = r.json()
+        if not r.status_code == 200:
+            logger.debug(" Pas de IgClientPositions : ", str(r.status_code))
 
-		# aggrégation des feuilles de prix
-		if r1.status_code == 200:
-			merger = Merger(schema)
-			base = None
+        Bullish = raw.get("longPositionPercentage")
+        Bearish = raw.get("shortPositionPercentage")
+        a = {"Bull": int(Bullish), "Bear": int(Bearish)}
 
-			# pprint.pprint(r1.json())
-			print("\nMETADATA : ")
-			pprint.pprint(r1.json().get("metadata"))
-			print("\nPageData: ")
-			print(r1.json().get("metadata").get("pageData"))
+        return a
 
-			totalPages = r1.json().get("metadata").get("pageData").get("totalPages")
-			x = int(pageNumber)
-			y = int(totalPages)
-			for x in range(y):
+    def pnl(self):
+        # fonction pour recuperer le PnL
+        url = self.serverAddr + "/accounts"
 
-				pageNumber = str(int(pageNumber) + 1)
-				url2 = [self.serverAddr,"/prices/", epic, "?resolution=", resolution,
-						"&from=", dateFrom, "&to=", dateTo, "&pageSize=", pageSize, "&pageNumber=", pageNumber]
-				r2 = requests.get(phrase.join(url2), headers=h1)
-				if r2.status_code == 200:
-	
-					raw = r2.json()
-					base = merger.merge(base, raw, meta={'page': 1})
-					pprint.pprint(r2)
-				elif r2.status_code ==403 :
-					print(r2)
-					break
+        h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'),
+              'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
+              'Version': '1', 'X-IG-API-KEY': id.apiKey
+              }
+        r = requests.get(url, headers=h1)
+        raw = r.json()
+        value = str
+        logger.debug("pnl:", str(r.status_code), str(raw))
 
-			with open("archive/"+self.marketId(epic)+dateF[:10]+"_"+dateT[:10]+ ".json", 'w', encoding="utf-8") as outfile:
-				json.dump(base, outfile, ensure_ascii=False) 
+        if r.status_code == 200:
+            for x in range(len(raw['accounts'])):
+                logger.debug(str(raw['accounts'][x]['accountId']))
+                if raw['accounts'][x]['accountId'] == Var.data.get('accountId'):
+                    value = str(raw['accounts'][x]['balance']['balance'])
+                else:
+                    logger.warning("Id de compte non trouvé, ",
+                                   str(r.status_code))
 
-			return base
+            return value
 
-		else:
-			code = str(r1.status_code)
-			print("ERREUR:" + code + " !\n")
-			pprint.pprint(r1.json())
+        elif r.status_code == 401 and self.essaiPnl < 1:
+            Var.data = self.refresh(Var.data)
+            self.essaiPnl = self.essaiPnl + 1
+            self.pnl()
 
-			if r1.json().get('errorCode') == 'error.security.oauth-token-invalid':
-					   # Refreshing token
+        else:
+            logger.debug("Pas de PNL : ", str(r.status_code))
 
-				code = str(r1.status_code)
-				print("Code HTTP: " + code)
+    def retrieve(self, epic, dateF, dateT):
+        """ Par default resolution = MINUTE
+                                        date(UTC) format : "2017-MM-DDTHH:MM:SS"(string) 
+        """
+        schema = {
+            "prices": [{"type": "object", "mergeStrategy": "append"}],
+            "instrumentType": "",
+            "metadata": {
+                "allowance": {},
+                "size": "",
+                        "pageData": {
+                            "pageSize": "",
+                                        "pageNumber": "",
+                                        "totalPages": ""
+                }
+            }
+        }
 
-	def CreateOrders(self,orderType,direction,stopDistance,limitDistance,epic,*args):
-		url= [self.serverAddr,"/positions/otc"]
-		code = self.getcurrencycode(epic)
+        # standard get requests apres ID
+        h1 = {'IG-ACCOUNT-ID': Var.data.get('accountId'), 'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get(
+            'oauthToken').get('access_token'), 'Version': '3', 'X-IG-API-KEY': id.apiKey}
 
-		if orderType == "MARKET" :
-			level = None
-		
-		h1 = {
-			'IG-ACCOUNT-ID': Var.data.get('accountId'),
-			'Authorization': Var.data.get('oauthToken').get('token_type')+" "+Var.data.get('oauthToken').get('access_token'),
-			'Version': '2',
-			'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2"
-			}
-		payloads = {
-			# python Dict et non du JSON (None == null)
-			"epic": epic,
-			"expiry": "-",
-			"direction": direction,
-			"size": "1",
-			"orderType": orderType,
-			"timeInForce": None,
-			"level": level,
-			"guaranteedStop": "false",
-			"stopLevel": None,
-			"stopDistance": stopDistance,
-			"trailingStop": None,
-			"trailingStopIncrement": None,
-			"forceOpen": "true",
-			"limitLevel": None,
-			"limitDistance": limitDistance,
-			"quoteId": None,
-			"currencyCode": code
-			}
+        resolution = 'MINUTE'
+        dateFrom = dateF.replace(":", "%3A")
+        dateTo = dateT.replace(":", "%3A")
+        pageSize = "100"
+        pageNumber = "1"
+        totalPages = ""
+        phrase = ""
 
-		#pprint.pprint(json.dumps(payloads))
-		r= requests.post(str("").join(url), data=json.dumps(payloads), headers=h1)
-		print(r.status_code)
-		#print(r.json())
-		
-		if r.status_code == 200:
-			dealref = r.json().get("dealReference")
-			#print(dealref)
-			h={'IG-ACCOUNT-ID': Var.data.get('accountId'),
-				'Authorization': Var.data.get('oauthToken').get('token_type')+" "+Var.data.get('oauthToken').get('access_token'),
-				'Version': '1', # VERSION 1
-				'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2"}
+        # DEBUG
+        logger.debug("Headers: %s ", h1)
 
-			url1 = self.serverAddr+"/confirms/"+dealref
-			r1= requests.get(url1, headers=h)
-			raw1 = r1.json()
-			
-			if raw1.get("dealStatus") == "ACCEPTED" :
-				print(raw1.get('dealStatus'))
-				Var.DealDone["Time"].append(raw1.get("date"))
-				Var.DealDone["Id"].append(raw1.get("dealId"))
-				Var.DealDone["sens"].append(raw1.get("direction"))
+        url1 = [self.serverAddr, "/prices/", epic, "?resolution=", resolution,
+                "&from=", dateFrom, "&to=", dateTo, "&pageSize=", pageSize, "&pageNumber=", pageNumber]
+        r1 = requests.get(phrase.join(url1), headers=h1)
 
-			elif raw1.get("dealStatus") == "REJECTED" :
-				print("Rejected")
-				raw1.get("reason")
-			else :
-				print("Erreur: ",r1.status_code)
+        # aggrégation des feuilles de prix
+        if r1.status_code == 200:
+            merger = Merger(schema)
+            base = None
 
-		else :
-			print(r.status_code)
+            # pprint.pprint(r1.json())
+            logger.debug("----METADATA----")
+            logger.debug('%s', pformat(r1.json().get("metadata")))
+            logger.debug("----FIN METADATA----")
+            totalPages = r1.json().get("metadata").get("pageData").get("totalPages")
+            x = int(pageNumber)
+            y = int(totalPages)
+            for x in range(y):
 
-	def CloseOrders(self, dealId, orderType, *args):
-		"""SEUL un Deal ID devrait etre passé, avec MARKET type"""
-		if orderType == "MARKET" :
-			level = None
-		
-		url =[self.serverAddr, "/positions/otc"]
-		url0 = self.serverAddr + "/positions/" + dealId
-		h0 = {
-			'IG-ACCOUNT-ID': Var.data.get('accountId'),
-			'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
-			'Version': '1',
-			'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2",
-		}
+                pageNumber = str(int(pageNumber) + 1)
+                url2 = [self.serverAddr, "/prices/", epic, "?resolution=", resolution,
+                        "&from=", dateFrom, "&to=", dateTo, "&pageSize=", pageSize, "&pageNumber=", pageNumber]
+                r2 = requests.get(phrase.join(url2), headers=h1)
+                if r2.status_code == 200:
 
-		h1 = {
-			'IG-ACCOUNT-ID': Var.data.get('accountId'),
-			'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
-			'Version': '1',
-			'X-IG-API-KEY': "cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2",
-			'_method': "DELETE"
-		}
+                    raw = r2.json()
+                    base = merger.merge(base, raw, meta={'page': 1})
+                    logger.info(str(r2))
+                elif r2.status_code == 403:
+                    logger.debug(str(r2))
+                    break
 
-		#  Verifie et ajuste le sens et la taille par rapport a l'initiale
-		r0 = requests.get(url0, headers=h0)
-		raw0 = r0.json()
-		print(raw0)
+            with open("archive/" + self.marketId(epic) + dateF[:10] + "_" + dateT[:10] + ".json", 'w', encoding="utf-8") as outfile:
+                json.dump(base, outfile, ensure_ascii=False)
 
-		if (raw0.get("position").get("direction")) == "BUY":
-			CloseDir = "SELL"
-		else:
-			CloseDir = "BUY"
+            return base
 
-		initialSize = raw0.get("position").get("dealSize")
-		initialeLevel = raw0.get("position").get("openLevel")
+        else:
+            code = str(r1.status_code)
+            logger.error("REFUS SERVEUR {}\n".format(code))
+            logger.debug(r1.json())
 
-		if float(initialSize) == int(initialSize):
-			initialSize = int(initialSize)
+            if r1.json().get('errorCode') == 'error.security.oauth-token-invalid':
+                # refresh the token
+                logger.info("impossible de refresh: {}".format(r1.json()))
 
-		payloads = {
-			"dealId": dealId,
-			"epic": None,
-			"expiry": None,
-			"direction": CloseDir,
-			"size": str(initialSize),
-			"level": level,
-			"orderType": orderType,
-			"timeInForce": None,
-			"quoteId": None
-		}
-		print(json.dumps(payloads))
-		r = requests.post(str("").join(url), headers=h1, data=json.dumps(payloads))
+    def CreateOrders(self, orderType, direction, stopDistance, limitDistance, epic, *args):
+        url = [self.serverAddr, "/positions/otc"]
+        code = self.getcurrencycode(epic)
 
-		if r.status_code == 200:
-			dealref = r.json().get("dealReference")
-			url1 = self.serverAddr + "/confirms/" + dealref
-			r1 = requests.get(url1, headers=h0)
-			raw1 = r1.json()
+        if orderType == "MARKET":
+            level = None
 
-			if raw1.get("dealStatus") == "ACCEPTED":
-				# print(raw1)
-				Var.CleanedDeal["CloseTime"].append(raw1.get("date"))
-				Var.CleanedDeal["OpenTime"].append(raw1.get("dealId"))
-				Var.CleanedDeal["closelevel"].append(raw1.get("level"))
-				Var.CleanedDeal["profit"].append(raw1.get("profit"))
-				Var.CleanedDeal["entrylevel"].append(initialeLevel)
+        h1 = {
+            'IG-ACCOUNT-ID': Var.data.get('accountId'),
+            'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
+            'Version': '2',
+            'X-IG-API-KEY': id.apiKey
+        }
+        payloads = {
+            # python Dict et non du JSON (None == null)
+            "epic": epic,
+            "expiry": "-",
+            "direction": direction,
+            "size": "1",
+            "orderType": orderType,
+            "timeInForce": None,
+            "level": level,
+            "guaranteedStop": "false",
+            "stopLevel": None,
+            "stopDistance": stopDistance,
+            "trailingStop": None,
+            "trailingStopIncrement": None,
+            "forceOpen": "true",
+            "limitLevel": None,
+            "limitDistance": limitDistance,
+            "quoteId": None,
+            "currencyCode": code
+        }
 
-			elif (raw1.get("dealStatus")) == "REJECTED" :
-				print("Rejected")
+        # pprint.pprint(json.dumps(payloads))
+        r = requests.post(str("").join(
+            url), data=json.dumps(payloads), headers=h1)
+        logger.info('%s', r.status_code)
+        # print(r.json())
 
-			else :
-				print("Erreur: ")
-				print(r1.status_code)
+        if r.status_code == 200:
+            dealref = r.json().get("dealReference")
+            # print(dealref)
+            h = {'IG-ACCOUNT-ID': Var.data.get('accountId'),
+                 'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
+                 'Version': '1',  # VERSION 1
+                 'X-IG-API-KEY': id.apiKey}
 
-			Var.PnL =+ (round(float(raw1.get("profit")),2))
-		else:
-			print("erreur:",r.status_code)
-			print(r.json())
+            url1 = self.serverAddr + "/confirms/" + dealref
+            r1 = requests.get(url1, headers=h)
+            raw1 = r1.json()
+
+            if raw1.get("dealStatus") == "ACCEPTED":
+                logger.info('%s', raw1.get('dealStatus'))
+                Var.DealDone["Time"].append(raw1.get("date"))
+                Var.DealDone["Id"].append(raw1.get("dealId"))
+                Var.DealDone["sens"].append(raw1.get("direction"))
+
+            elif raw1.get("dealStatus") == "REJECTED":
+                logger.debug("Rejected")
+                raw1.get("reason")
+            else:
+                logger.critical("UNKNOW result: %s", r1.status_code)
+
+        else:
+            logger.error(str(r.status_code))
+
+    def CloseOrders(self, dealId, orderType, *args):
+        """SEUL un Deal ID devrait etre passé, avec MARKET type"""
+        if orderType == "MARKET":
+            level = None
+
+        url = [self.serverAddr, "/positions/otc"]
+        url0 = self.serverAddr + "/positions/" + dealId
+        h0 = {
+            'IG-ACCOUNT-ID': Var.data.get('accountId'),
+            'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
+            'Version': '1',
+            'X-IG-API-KEY': id.apiKey,
+        }
+
+        h1 = {
+            'IG-ACCOUNT-ID': Var.data.get('accountId'),
+            'Authorization': Var.data.get('oauthToken').get('token_type') + " " + Var.data.get('oauthToken').get('access_token'),
+            'Version': '1',
+            'X-IG-API-KEY': id.apiKey,
+            '_method': "DELETE"
+        }
+
+        #  Verifie et ajuste le sens et la taille par rapport a l'initiale
+        r0 = requests.get(url0, headers=h0)
+        raw0 = r0.json()
+        print(raw0)
+
+        if (raw0.get("position").get("direction")) == "BUY":
+            CloseDir = "SELL"
+        else:
+            CloseDir = "BUY"
+
+        initialSize = raw0.get("position").get("dealSize")
+        initialeLevel = raw0.get("position").get("openLevel")
+
+        if float(initialSize) == int(initialSize):
+            initialSize = int(initialSize)
+
+        payloads = {
+            "dealId": dealId,
+            "epic": None,
+            "expiry": None,
+            "direction": CloseDir,
+            "size": str(initialSize),
+            "level": level,
+            "orderType": orderType,
+            "timeInForce": None,
+            "quoteId": None
+        }
+        print(json.dumps(payloads))
+        r = requests.post(str("").join(url), headers=h1,
+                          data=json.dumps(payloads))
+
+        if r.status_code == 200:
+            dealref = r.json().get("dealReference")
+            url1 = self.serverAddr + "/confirms/" + dealref
+            r1 = requests.get(url1, headers=h0)
+            raw1 = r1.json()
+
+            if raw1.get("dealStatus") == "ACCEPTED":
+                # print(raw1)
+                Var.CleanedDeal["CloseTime"].append(raw1.get("date"))
+                Var.CleanedDeal["OpenTime"].append(raw1.get("dealId"))
+                Var.CleanedDeal["closelevel"].append(raw1.get("level"))
+                Var.CleanedDeal["profit"].append(raw1.get("profit"))
+                Var.CleanedDeal["entrylevel"].append(initialeLevel)
+
+            elif (raw1.get("dealStatus")) == "REJECTED":
+                print("Rejected")
+
+            else:
+                print("Erreur: ")
+                print(r1.status_code)
+
+            Var.PnL = + (round(float(raw1.get("profit")), 2))
+        else:
+            print("erreur:", r.status_code)
+            print(r.json())
 
 
 class backtest:
-	"""docstring for backtest"""
-	def __init__(self):
-		pass
+    """docstring for backtest"""
 
-	def Pull(self, DayF, DayT):
+    def __init__(self):
+        pass
 
-		api = ig()
-		dateF = DayF + "T00:00:00"
-		dateT = DayT + "T00:00:00"
-		marketId = api.marketId(Var.epic)
+    def Pull(self, DayF, DayT):
 
-		if not os.path.isfile("archive/" + marketId + dateF[:10] + "_" + dateT[:10] + ".json"):
-			sample = api.retrieve(Var.epic, dateF, dateT)
-		else:
-			with open("archive/"+marketId+dateF[:10]+"_"+dateT[:10]+ ".json", 'r', encoding="utf-8") as outfile:
-				# sample Data
-				sample = json.load(outfile)
+        api = ig()
+        dateF = DayF + "T00:00:00"
+        dateT = DayT + "T00:00:00"
+        marketId = api.marketId(Var.epic)
+        Var.marketId = marketId
+        if not os.path.isfile("archive/json/" + marketId + dateF[:10] + "_" + dateT[:10] + ".json"):
+            sample = api.retrieve(Var.epic, dateF, dateT)
+            # with open("DAT_ASCII_AUDJPY_M1_201802.csv",encoding="ascii")
+        else:
+            with open("archive/json/" + marketId + dateF[:10] + "_" + dateT[:10] + ".json", 'r', encoding="utf-8") as outfile:
+                # sample Data
+                sample = json.load(outfile)
 
-		self.pricediscovery(sample)
+        self.pricediscovery(sample)
+        df = self.jsontodataframe(sample)
 
-		df = self.jsonpricetocsv(sample)
+        collist = ["Time", "TradedVolume", "askClose", "bidClose", "ema", "MA"]
+        for x in range(1, len(list(df)) - len(collist) - 1):
+            collist.append("Trade" + str(x))
+        frame = df[collist]
+        frame = frame.replace(0, "")
 
-		pd.DataFrame(Var.FakeDeal).to_csv("entry.csv", index=False)
-		pd.DataFrame(Var.CleanedDeal).to_csv("close.csv", index=False)
-		pd.DataFrame(df).to_csv("priceclose.csv", index=False)
+        writer = pd.ExcelWriter('backtest/resume{}.xlsx'.format(DayF))
+        frame.to_excel(writer, 'Overview')
+        pd.DataFrame(Var.CleanedDeal).to_excel(writer, "Deals")
+        # pd.DataFrame(Var.FakeDeal).to_csv("openposition.csv", index=False)
+        #df.to_csv("backtest/resume"+DayF+".csv", index=False)
+        writer.save()
 
-	def pricediscovery(self,sample):
-		""" sample.json passe dans le "systeme"
-		"""
-		t = sample["prices"][0]["snapshotTimeUTC"]
-		Var.lastDatetime = datetime.datetime(int(t[:4]), int(t[5:7]), int(t[8:10]), int(t[11:13]), int(t[14:16]), int(t[17:19]))
+    def pricediscovery(self, sample):
+        """ sample.json passe dans le "systeme"
+        """
+        t = sample["prices"][0]["snapshotTimeUTC"]
+        Var.lastDatetime = datetime.datetime(int(t[:4]), int(t[5:7]), int(
+            t[8:10]), int(t[11:13]), int(t[14:16]), int(t[17:19]))
 
-		for x in range(0, len(sample.get("prices")) - 1):
+        for x in range(0, len(sample.get("prices")) - 1):
 
-			bidbefore = float(sample.get('prices')[x - 1].get('closePrice').get('bid'))
-			askbefore = float(sample.get('prices')[x - 1].get('closePrice').get('ask'))
-			bid = float(sample.get('prices')[x].get('closePrice').get('bid'))
-			ask = float(sample.get('prices')[x].get('closePrice').get('ask'))
-			
-			t = sample["prices"][x]["snapshotTimeUTC"]
-			temps = datetime.datetime(int(t[:4]), int(t[5:7]), int(t[8:10]), int(t[11:13]), int(t[14:16]), int(t[17:19]))
-			
-			indicateur.indicateur(temps=temps, Midpoint=((bid+ask)/2))
-			strategie.strategie(BidAsk=[bid,ask],Price_0=[bidbefore,askbefore], temps=temps, backtest=Var.backtest) 
+            bidbefore = float(sample.get('prices')[
+                x - 1].get('closePrice').get('bid'))
+            askbefore = float(sample.get('prices')[
+                x - 1].get('closePrice').get('ask'))
+            bid = float(sample.get('prices')[x].get('closePrice').get('bid'))
+            ask = float(sample.get('prices')[x].get('closePrice').get('ask'))
 
-			# print(temps)
-			# print("b: ",bid," a: ",ask, "t:", temps,"b0: ",bidbefore,"a0: ",askbefore)
-			time.sleep(Var.DebugTime)  # Pour debug 
+            t = sample["prices"][x]["snapshotTimeUTC"]
+            temps = datetime.datetime(int(t[:4]), int(t[5:7]), int(
+                t[8:10]), int(t[11:13]), int(t[14:16]), int(t[17:19]))
 
-	def jsonpricetocsv(self, sample):
-		"""	sample : json object
-			Retrieve Json to dictsa object named df
-			"""
-		df = {"Time": [],
-			"bidClose": [],
-			"askClose": [],
-			"TradedVolume": [],
-			"ema": [],
-			"Open": [],
-			"Close": []
-			}
+            indicateur.indicateur(temps=temps, Midpoint=((bid + ask) / 2))
+            strategie.strategie(BidAsk=[bid, ask], Price_0=[
+                bidbefore, askbefore], temps=temps, backtest=Var.backtest)
 
-		for x in range(0, len(sample["prices"])):
+            # print(temps)
+            # print("b: ",bid," a: ",ask, "t:", temps,"b0: ",bidbefore,"a0: ",askbefore)
+            time.sleep(Var.DebugTime)  # Pour debug
 
-			df["Time"].append(sample["prices"][x]["snapshotTimeUTC"].replace("T","  "))
-			df["bidClose"].append(sample["prices"][x]["closePrice"]["bid"])
-			df["askClose"].append(sample["prices"][x]["closePrice"]["ask"])
-			df["TradedVolume"].append(sample["prices"][x]["lastTradedVolume"])
-		
-		# boucle migrant deal vers priceclose.csv
-		opendealscan = 1
-		closedealscan = 1
-		for x in range(0,len(df["Time"])-1):
-			t = df["Time"][x]
-			a = datetime.datetime(int(t[:4]), int(t[5:7]), int(t[8:10]), int(t[12:14]), int(t[15:17]), int(t[18:20]))
-			
-			for y1 in range(opendealscan, len(Var.CleanedDeal["OpenTime"])):
-				t1 = Var.CleanedDeal["OpenTime"][y1]
-				if len(t1) != 0:
-					up = datetime.datetime(int(t1[5:9]), int(t1[10:12]), int(t1[13:15]), int(t1[16:18]), int(t1[19:21]), int(t1[22:24]))
-					if up == a:
-						df["Open"].append(df["bidClose"][x])
-						opendealscan += 1
-						break
-					else: 
-						df["Open"].append(0)
-						break
-				else :
-					df["Open"].append(0)
-					opendealscan += 1
-					break
+    def jsontodataframe(self, sample):
+        """	sample : json object
+                                        Retrieve Json to dicts a object named df
+                                        """
+        df = {"Time": [],
+              "bidClose": [],
+              "askClose": [],
+              "TradedVolume": [],
+              "ema": [],
+              "MA": []
+              }
 
+        for x in range(0, len(sample["prices"])):
+
+            df["Time"].append(sample["prices"][x]
+                              ["snapshotTimeUTC"].replace("T", " "))
+            df["bidClose"].append(sample["prices"][x]["closePrice"]["bid"])
+            df["askClose"].append(sample["prices"][x]["closePrice"]["ask"])
+            df["TradedVolume"].append(sample["prices"][x]["lastTradedVolume"])
+
+        # boucle migrant deal vers priceclose.csv
+        opendealscan = 1
+        closedealscan = 1
+        for z in range(1, len(Var.CleanedDeal["OpenTime"])):
+            name = "Trade" + str(z)
+            df[name] = []
+
+        for x in range(0, len(df["Time"])):
+            t = df["Time"][x]
+            a = datetime.datetime(int(t[:4]), int(t[5:7]), int(
+                t[8:10]), int(t[11:13]), int(t[14:16]), int(t[17:19]))
+
+            # open
+            for y1 in range(opendealscan, len(Var.CleanedDeal["OpenTime"])):
+                # date d'ouverture du deal
+                t1 = Var.CleanedDeal["OpenTime"][y1]
+                t2 = Var.CleanedDeal["CloseTime"][y1]
+                up = datetime.datetime(int(t1[:4]), int(t1[5:7]), int(
+                    t1[8:10]), int(t1[11:13]), int(t1[14:16]), int(t1[17:19]))
+                down = datetime.datetime(int(t2[:4]), int(t2[5:7]), int(
+                    t2[8:10]), int(t2[11:13]), int(t2[14:16]), int(t2[17:19]))
+                colname = "Trade" + str(y1)
+
+                if a >= up and a <= down:
+                    df[colname].append(df["bidClose"][x])
+                else:
+                    df[colname].append(0)
+
+            """	 #--- Remplacé par dataframe---
 			for y in range(closedealscan, len(Var.CleanedDeal["CloseTime"])):
 				t0 = Var.CleanedDeal["CloseTime"][y-1]
 				t2 = Var.CleanedDeal["CloseTime"][y]
@@ -552,8 +571,8 @@ class backtest:
 					df["Close"].append(0)
 					closedealscan += 1
 					break
-
-			#print("v1:",opendealscan," V2:",closedealscan)
+			
+			logger.debug("v1:",opendealscan," V2:",closedealscan)
 			p1 = opendealscan == (len(Var.CleanedDeal["OpenTime"]))
 			p2 = closedealscan == (len(Var.CleanedDeal["CloseTime"]))
 			if p1 :
@@ -561,68 +580,83 @@ class backtest:
 				# fini de remplir le tableau apres tout les deal matché
 			if p2 : 
 				df["Close"].append(0)
+			"""
+        Var.emaBacktest[0] = Var.emaBacktest[1]  # corrige le premier 0
+        df["ema"] = Var.emaBacktest
+        df["MA"] = Var.mabacktest
+        # arrnagela taille du csv :
+        logger.debug("open:{} close,{} ma:{} autre: {}".format(
+            len(df["Trade1"]), len(df["Trade2"]), len(df["MA"]), len(df["bidClose"])))
+        dimension = len(df["bidClose"])
 
-		Var.emaBacktest[0] = Var.emaBacktest[1] # corrige le premier 0
-		df["ema"] = Var.emaBacktest
-		
-		if Var.ema["echelle"] =="minutes" :
-			df["Close"].append(0) # bug pour la derniere min on dirait
-		
-		# DEBUG array lengh :
-		print("open:",len(df["Open"]),len(df["Close"]), "ema:",len(df["ema"])," autre:",len(df["bidClose"]))
-		return df
-		
-	def fakeOrders(self, BidAsk, sens, temps):
+        if len(df["MA"]) != dimension:
+            for x in range(0, dimension - len(df["MA"])):
+                df["MA"].append(0)
 
-			if sens == "BUY":
-				inverse = float(BidAsk[1])  # inverse = Ask
-			elif sens == "SELL":
-				inverse = float(BidAsk[0])  # inverse = Bid
-			else:
-				print("erreur direction trade")
+        for x in range(1, len(Var.CleanedDeal["OpenTime"])):
+            colname = "Trade" + str(x)
+            if len(df[colname]) != dimension:
+                for x in range(0, dimension - len(df[colname])):
+                    df[colname].append(0)
+            else:
+                # logger.debug("{} filled".format(colname))
+                pass
 
-			Var.FakeDeal["Time"].append(str(temps))
-			Var.FakeDeal["entry"].append(inverse)
-			Var.FakeDeal["sens"].append(sens)
-			Var.FakeDeal["Id"].append("Fake:" + str(temps))
+        logger.debug("arrangement {}".format(len(df["Trade1"])))
 
-	def CloseFakeOrders(self, Dealtuple, BidAsk, temps):
-		""" cloture les ordres selon leur ID """
-		y=0 # x-y index pour suppresion du dictionnaire FakeDeal
-		
-		for x in range(len(Dealtuple)):
-			i = Dealtuple[x] # index du deal
-			FakeId = Var.FakeDeal["Id"][i]
-			entry = Var.FakeDeal["entry"][i]
-			sens = Var.FakeDeal["sens"][i]
-			# print("cloturé a",entry,'sens ;',sens,"heure= ",Var.FakeDeal["Time"][i])
+        return pd.DataFrame(df)
 
-			if sens =="SELL":
-				prixsortie = float(BidAsk[1]) #Ask
-				profit = round((entry - prixsortie ) * 10000, 2)
-			else: 
-				prixsortie =float(BidAsk[0]) # Bid
-				profit = round((prixsortie - entry) * 10000, 2)
+    def fakeOrders(self, BidAsk, sens, temps):
 
-			Var.PnL += profit
+        if sens == "BUY":
+            inverse = float(BidAsk[1])  # inverse = Ask
+        elif sens == "SELL":
+            inverse = float(BidAsk[0])  # inverse = Bid
+        else:
+            logger.warning("erreur direction trade")
 
-			Var.CleanedDeal["CloseTime"].append(str(temps))	
-			Var.CleanedDeal["OpenTime"].append(FakeId)
-			Var.CleanedDeal["profit"].append(profit)
-			Var.CleanedDeal["entrylevel"].append(entry)
-			Var.CleanedDeal["closelevel"].append(prixsortie)
+        Var.FakeDeal["Time"].append(str(temps))
+        Var.FakeDeal["entry"].append(inverse)
+        Var.FakeDeal["sens"].append(sens)
+        Var.FakeDeal["Id"].append(str(temps))
 
-		# print(Dealtuple)
-		for x in Dealtuple:	
-			#supprime les valeurs traitées
-			#print("Deal "+Var.FakeDeal["Time"][x-y]+" CLOTURE !")
-			Var.FakeDeal["Time"].pop(x-y)
-			Var.FakeDeal["Id"].pop(x-y)
-			Var.FakeDeal["entry"].pop(x-y)
-			Var.FakeDeal["sens"].pop(x-y) 
-			# apres destruction de une entrée dans Fakedeal,
-			# l'index relatif dans Dealtuple regresse de 1
-			y+=1
+    def CloseFakeOrders(self, Dealtuple, BidAsk, temps):
+        """ cloture les ordres selon leur ID """
+        y = 0  # x-y index pour suppresion du dictionnaire FakeDeal
+
+        for x in range(len(Dealtuple)):
+            i = Dealtuple[x]  # index du deal
+            FakeId = Var.FakeDeal["Id"][i]
+            entry = Var.FakeDeal["entry"][i]
+            sens = Var.FakeDeal["sens"][i]
+            # print("cloturé a",entry,'sens ;',sens,"heure= ",Var.FakeDeal["Time"][i])
+
+            if sens == "SELL":
+                prixsortie = float(BidAsk[1])  # Ask
+                profit = round((entry - prixsortie) * 10000, 2)
+            else:
+                prixsortie = float(BidAsk[0])  # Bid
+                profit = round((prixsortie - entry) * 10000, 2)
+
+            Var.PnL += profit
+
+            Var.CleanedDeal["CloseTime"].append(str(temps))
+            Var.CleanedDeal["OpenTime"].append(FakeId)
+            Var.CleanedDeal["profit"].append(profit)
+            Var.CleanedDeal["entrylevel"].append(entry)
+            Var.CleanedDeal["closelevel"].append(prixsortie)
+
+        # print(Dealtuple)
+        for x in Dealtuple:
+            # supprime les valeurs traitées
+            #print("Deal "+Var.FakeDeal["Time"][x-y]+" CLOTURE !")
+            Var.FakeDeal["Time"].pop(x - y)
+            Var.FakeDeal["Id"].pop(x - y)
+            Var.FakeDeal["entry"].pop(x - y)
+            Var.FakeDeal["sens"].pop(x - y)
+            # apres destruction de une entrée dans Fakedeal,
+            # l'index relatif dans Dealtuple regresse de 1
+            y += 1
 
 
 # if __name__ == '__main__':

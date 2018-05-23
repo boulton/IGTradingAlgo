@@ -16,6 +16,7 @@
 
 import sys
 import logging
+from logging.handlers import RotatingFileHandler 
 import strategie
 import indicateur
 import threading
@@ -81,6 +82,19 @@ OK_CMD = "OK"
 
 
 log = logging.getLogger()
+log.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(asctime)s :: %(levelname)s :: %(message)s')
+
+file_handler = RotatingFileHandler('activity.log', 'a', 10000, encoding='utf-8')
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(formatter)
+
+stream_handler = logging.StreamHandler()
+stream_handler.setLevel(logging.DEBUG)
+
+log.addHandler(file_handler)
+log.addHandler(stream_handler)
 
 class Subscription(object):
 	"""Represents a Subscription to be submitted to a Lightstreamer Server."""
@@ -157,7 +171,7 @@ class LSClient(object):
 		self._stream_connection_thread = None
 		self._bind_counter = 0
 		self._other_thread = None
-		self.managerfirstrun = True
+		
 
 	def _encode_params(self, params):
 		"""Encode the parameter for HTTP POST submissions, but
@@ -452,24 +466,25 @@ class LSClient(object):
 	def manager(self):
 		""" Trade manager , ouvre et ferme les trades,
 			 c'est un thread a part de LSlistener """
-		if self.managerfirstrun :
+		if Var.managerfirstrun :
 			# 302 sec = 5min
 			time.sleep(Var.AlgoInitialTime) 
-			self.managerfirstrun = False
+			Var.managerfirstrun = False
 			self.manager()
 		else :
 			print("strategie activé")
 			while 1:
-				time.sleep(0.7)
+				time.sleep(0.9)
 				i = (len(Var.price["Bid"])-1)
-				heure = Var.price["Time"][i]
+				heurestr = Var.price["Time"][i]
+				# heure = datetime.datetime.strptime('',)
 				bid = Var.price["Bid"][i]
-				bid0 = Var.price["Bid"][i-1]
+				bid0 = Var.price["Bid"][i-60] # +/- 1 iter/seconde
 				ask = Var.price["Ask"][i]
-				ask0 = Var.price["Ask"][i-1]
+				ask0 = Var.price["Ask"][i-60]
 				strategie.strategie(BidAsk=[bid,ask],
 									Price_0=[bid0,ask0], 
-									temps=heure,
+									temps=heurestr,
 									backtest=Var.backtest)
 
 # A simple function acting as a Subscription listener
@@ -478,22 +493,24 @@ def on_item_update(item_update):
 	# Chart renvoie time en temps unix :
 	t1 = datetime.datetime.utcfromtimestamp(int(item_update["values"]["UTM"])/ 1e3)
 	temps = t1.strftime('%H:%M:%S')
-	bid = item_update["values"]["BID_CLOSE"]
-	ask = item_update["values"]["OFR_CLOSE"]
-
+	if item_update["values"]["BID_CLOSE"] != "":
+		bid = item_update["values"]["BID_CLOSE"]
+	else:
+		bid = Var.price["Bid"][len(Var.price["Bid"])-1]
+	if item_update["values"]["OFR_CLOSE"] != "":
+		ask = item_update["values"]["OFR_CLOSE"] 
+	else :
+		print()
+		ask = Var.price["Ask"][len(Var.price["Ask"])-1]
 	# Vers 2h du matin, 
 	# bid ou ask tend vers N/A et donc plante le systeme :
-	try:
-		Var.price["Time"].append(temps)
-		Var.price["Bid"].append(bid)
-		Var.price["Ask"].append(ask)
+	Var.price["Time"].append(t1)
+	Var.price["Bid"].append(bid)
+	Var.price["Ask"].append(ask)
 
-		Midpoint = ((float(bid)+float(ask))/2)
-		#Calcul d'indicateurs
-		indicateur.indicateur(Midpoint=Midpoint,temps=t1)
-
-	except:
-		print("error")	
+	Midpoint = ((float(bid)+float(ask))/2)
+	#Calcul d'indicateurs
+	indicateur.indicateur(Midpoint=Midpoint,temps=t1)	
 
 def streaming(data):
 	# OLD
@@ -539,14 +556,7 @@ def streaming(data):
 
 def nonArchiver(i):
 	# sous fonction d'archive pour convertir les json object
-	item = {
-      "snapshotTime": (Var.price["Time"][i]),
-      "snapshotTimeUTC": (Var.price["Date"]+"T"+Var.price["Time"][i]),
-      "closePrice": {
-        "bid": float(Var.price["Bid"][i]),
-        "ask": float(Var.price["Ask"][i]),
-        "lastTraded": 0
-      }}
+	
 
 	return item
 
@@ -561,6 +571,15 @@ def archive():
 	#---Var.price convertit en json array----
 	ArchStream ="["
 	for x in range(1,len(Var.price["Time"])-1):
+		item = {
+			"snapshotTime": str(Var.price["Time"][x]),
+			"snapshotTimeUTC": (Var.price["Date"]+"T"+str(Var.price["Time"][x])),
+			"closePrice": {
+				"bid": float(Var.price["Bid"][x]),
+				"ask": float(Var.price["Ask"][x]),
+				"lastTraded": 0
+			}
+		}
 		ArchStream += str(nonArchiver(x))+","
 	ArchStream = ArchStream[:-1] # Remove last virgule
 	ArchStream+="]"
@@ -600,6 +619,6 @@ def archive():
 
 
 if __name__=='__main__' :
-	streaming(rest.ig().Auth('fleuros','Trade4Lyfe'))
+	streaming(rest.ig().Auth(Var.login,Var.password))
 
 logging.basicConfig(level=logging.INFO)

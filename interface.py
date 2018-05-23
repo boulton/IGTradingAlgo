@@ -12,12 +12,26 @@ import time
 import rest
 import stream
 import Var
-
+import logging
+from logging.handlers import RotatingFileHandler
 
 from datetime import datetime
 import datetime as dt
 
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(levelname)s :: %(asctime)s :: %(name)s :: %(message)s')
 
+file_handler = RotatingFileHandler('activity.log', 'a', 3000, encoding='utf-8')
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(formatter)
+
+stream_handler = logging.StreamHandler()
+stream_handler.setLevel(logging.INFO)
+
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
+ 
 class page1(object):
 	"""docstring for app"""
 	def __init__(self,master):
@@ -59,10 +73,10 @@ class page1(object):
 		EntryNum = len(Var.price["Time"])-1
 		texte =(
 			"Marché: "+self.epic,
-			"Heure: "+Var.price["Time"][EntryNum],
+			"Temps: "+str(Var.price["Time"][EntryNum]),
 			"Bid: "+Var.price["Bid"][EntryNum],
 			"Ask: "+Var.price["Ask"][EntryNum],
-			"Ema"+str(len(Var.ema["valeurs"]))+": "+str(Var.ema["valeurs"][len(Var.ema["valeurs"])-1]),
+			"Ema "+str(len(Var.ema["valeurs"]))+": "+str(Var.ema["valeurs"][len(Var.ema["valeurs"])-1]),
 			"P/L: "+str(Var.PnL)+" pip \n",
 			"FDEAL: "+str(Var.FakeDeal),
 			"Clean: "+str(Var.CleanedDeal)
@@ -74,7 +88,7 @@ class page1(object):
 		
 	def connection(self):
 
-		print(self.LStoken['addr'])
+		logger.info(self.LStoken['addr'])
 		
 		Var.price["Date"] = str((datetime.now(dt.timezone.utc)).date()).replace('-','/')
 		# a regrouper ces codes dans 1 fonctions communes avec streaming
@@ -82,7 +96,7 @@ class page1(object):
 		try:
 			self.lightstreamer_client.connect()
 		except :
-			print("Unable to connect to Lightstreamer Server")
+			logger.error("Unable to connect to Lightstreamer Server")
 			sys.exit(1)
 
 		# Making a new Subscription in MERGE mode

@@ -4,6 +4,98 @@
 		"selected_items":
 		[
 			[
+				"en",
+				"encoding\tparam"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"try",
+				"try\tTry/Except/Else"
+			],
+			[
+				"M",
+				"MovingAvg\tstatement"
+			],
+			[
+				"Mo",
+				"MovingAvg\tstatement"
+			],
+			[
+				"Mov",
+				"MovingAvg0\tstatement"
+			],
+			[
+				"MA",
+				"MA"
+			],
+			[
+				"ma",
+				"mabacktest\tstatement"
+			],
+			[
+				"prx",
+				"prixpourma\tstatement"
+			],
+			[
+				"a",
+				"append\tfunction"
+			],
+			[
+				"z",
+				"zip\tclass"
+			],
+			[
+				"prix",
+				"prixpourma\tstatement"
+			],
+			[
+				"min",
+				"minutes"
+			],
+			[
+				"for",
+				"format\tfunction"
+			],
+			[
+				"lo",
+				"logger\tstatement"
+			],
+			[
+				"Tra",
+				"Trade1"
+			],
+			[
+				"Op",
+				"OpenTime"
+			],
+			[
+				"de",
+				"debug\tfunction"
+			],
+			[
+				"log",
+				"logging\tmodule"
+			],
+			[
+				"wa",
+				"warning\tfunction"
+			],
+			[
+				"in",
+				"info\tfunction"
+			],
+			[
+				"logg",
+				"logger\tstatement"
+			],
+			[
+				"heur",
+				"heurestr\tstatement"
+			],
+			[
 				"self",
 				"self"
 			],
@@ -140,10 +232,6 @@
 				"sellPrice"
 			],
 			[
-				"M",
-				"Midpoint\tparam"
-			],
-			[
 				"Min",
 				"MinUpgrade\tstatement"
 			],
@@ -210,10 +298,6 @@
 			[
 				"Fake",
 				"FakeId\tstatement"
-			],
-			[
-				"a",
-				"append\tfunction"
 			],
 			[
 				"Fa",
@@ -351,17 +435,43 @@
 			"file": "strategie.py",
 			"settings":
 			{
-				"buffer_size": 4707,
+				"buffer_size": 11065,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "rest.py",
+			"settings":
+			{
+				"buffer_size": 24943,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "stream.py",
 			"settings":
 			{
-				"buffer_size": 17739,
+				"buffer_size": 18404,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backtest.py",
+			"settings":
+			{
+				"buffer_size": 5977,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Dedale-PC/Google Drive/Market/java/ig-webapi-java-sample/ig-webapi-java-client/src/main/java/com/iggroup/webapi/samples/client/rest/Constants.java",
+			"settings":
+			{
+				"buffer_size": 507,
 				"line_ending": "Unix"
 			}
 		},
@@ -369,16 +479,7 @@
 			"file": "interface.py",
 			"settings":
 			{
-				"buffer_size": 2853,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "rest.py",
-			"settings":
-			{
-				"buffer_size": 19048,
+				"buffer_size": 3387,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -387,7 +488,7 @@
 			"file": "indicateur.py",
 			"settings":
 			{
-				"buffer_size": 3277,
+				"buffer_size": 7848,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -396,24 +497,53 @@
 			"file": "Var.py",
 			"settings":
 			{
-				"buffer_size": 1416,
+				"buffer_size": 1824,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "sable.py",
+			"file": "activity.log",
 			"settings":
 			{
-				"buffer_size": 929,
+				"buffer_size": 3055,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Todo.txt",
+			"settings":
+			{
+				"buffer_size": 946,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Anaconda Python Builder",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
 		[
 			[
 				[
@@ -427,29 +557,101 @@
 			],
 			[
 				"Packages/Python/Python.sublime-build",
-				""
+				"Syntax Check"
 			]
 		]
 	],
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 380.0,
+		"last_filter": "term",
 		"selected_items":
 		[
 			[
+				"term",
+				"Terminal: Open in project folder"
+			],
+			[
+				"find",
+				"Anaconda: Find object usage"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
 				"Package Control: ",
-				"Package Control: Upgrade/Overwrite All Packages"
+				"Package Control: Enable Package"
+			],
+			[
+				"autof",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"ed",
+				"Edge Theme: Activation"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"subli",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"",
+				"Anaconda: Display object docs"
+			],
+			[
+				"DISA",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Anaconda: Find object usage"
+			],
+			[
+				"ENA",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 444.0
+		"width": 456.0
 	},
 	"console":
 	{
-		"height": 131.0,
+		"height": 134.0,
 		"history":
 		[
+			"py",
+			"a",
+			"a = \"\"",
+			"String a = \"\"",
+			"string(a) = \"a\"",
+			"string a = \"a\"",
+			"string a = \"\"",
+			"STRING",
+			"A",
+			"exit",
+			"exit()",
+			"import stream.py",
+			"import rest",
+			"print(\"hell-world\")",
+			"sublime ",
+			"sublime help",
+			"sublime",
+			"sublime()",
+			"py",
+			"view.settings().get('syntax').lower()",
 			"import tweepy",
 			"jupyter notebook",
 			"rest",
@@ -472,10 +674,37 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)"
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)"
 	],
 	"file_history":
 	[
+		"/C/Users/Dedale-PC/Google Drive/Market/java/ig-webapi-java-sample/ig-webapi-java-sample-console/src/main/java/com/iggroup/webapi/samples/PropertiesUtil.java",
+		"/C/Users/Dedale-PC/Google Drive/Market/java/ig-webapi-java-sample/pom.xml",
+		"/C/Users/Dedale-PC/Google Drive/Market/java/ig-webapi-java-sample/ig-webapi-java-client/src/main/java/com/iggroup/webapi/samples/client/RestAPI.java",
+		"/C/Users/Dedale-PC/Google Drive/Market/java/ig-webapi-java-sample/README.md",
+		"/C/Users/Dedale-PC/Google Drive/Market/java/ig-webapi-java-sample/.gitignore",
+		"/C/Users/Dedale-PC/Google Drive/Market/java/JavaPivot/.gitignore",
+		"/C/Users/Dedale-PC/Google Drive/Market/java/JavaPivot/JavaPivot/ - Copie.project",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/archive/histdata/DAT_ASCII_AUDJPY_M1_201808.csv",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/activity.log",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/Javatar/Javatar.sublime-settings",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/User/Javatar.sublime-settings",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/backtest.py",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/User/Package Bundler.sublime-settings",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/Dedale-PC/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/package-metadata.json",
+		"/C/Users/Dedale-PC/Desktop/DAT_ASCII_AUDJPY_M1_201803.csv",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/sable.py",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/archive/json/EURUSD2018-03-12_2018-03-13.json",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/archive/json/EURUSD2018-03-12_2018-03-13.json.json",
+		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/archive/EURUSD2018-04-08_2018-04-09.json",
+		"/C/Users/Dedale-PC/Google Drive/Market/python/Mini(1.2)/archive/EURUSD2018-03-11_2018-03-12.json",
 		"/Users/Boulton/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
 		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/Todo.txt",
 		"/Users/Boulton/Google Drive/Market/python/Mini(1.2)/rest.py",
@@ -527,7 +756,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 48.0
 	},
 	"find_in_files":
 	{
@@ -541,6 +770,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"environm",
+			"\n\t",
+			"print",
+			"Bullish",
+			"Bearish",
+			"prixactuel",
+			"autoformat",
+			"autoforma",
+			"METADATA",
+			"error",
+			"Close",
+			"jsonpricetocsv",
+			"FileHandler",
+			"logger",
+			"pnl:",
+			"print",
+			"loggin",
+			"error",
+			"sample",
+			"t",
+			"up",
+			"beforestart",
+			"minlistcross",
+			"Var.price[\"Time\"]",
+			"error",
+			"i",
+			"archive",
+			"nonArchiver",
 			"close",
 			"print",
 			"emaH",
@@ -580,13 +837,13 @@
 	"folders":
 	[
 		{
-			"path": "U:sers\\Boulton\\Google Drive\\Market\\python\\Mini(1.2)"
+			"path": "C:\\Users\\Dedale-PC\\Google Drive\\Market\\python\\Mini(1.2)"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -595,19 +852,126 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4707,
+						"buffer_size": 11065,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1383,
-								1383
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"SL.14.region_keys":
+							[
+							],
+							"SL.15.region_keys":
+							[
+								"SL.flake8.Highlights.|3863d56752ee8c0f6569a43c8257a7819f59c5ebd2716e50ffa1b1334aa2a4d8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|93db6e68c0b3802aa2aa69372bfcd21b97d12f4e2eeb5010abb4742220042844|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|23cee1178b2337251e38f3c6d984cc3ac02dafa337f7b7f168ef0b376573120d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f96eaa222c7be8331f06e8580d731df40ebbbf00ec5a17b143a5d98f2905bbc5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4b3e10e3eafc2725198a428f887a34761a37637f7cb089f25a12e7725ee7c5bb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eb0d47dff63c0daa659dcb113d13193c147b41c18de399699ff65140001d8e5d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0fc1f853c0cc7bbe198e3f78228e15181145b6cd33ce98d2829bc8aaa3012307|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|03b3926f1aab9d7108f163756fcbcd1347d15f1d06eccc420bcdff5980e0d680|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2194bc60d7177f750a1649fcc1d6f07a40479df894b89a18f150461f2516baad|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|05a248f0e6c8cb66eef89309d9b3d922091a386f50c61ae63c3eec35f81c50f3|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|67cd41dc9197a858a6242c481ee035c27a4f5deffd7aaf49df6ba7205f5254e4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8cbe0dc128634967d621d01cfd7b576d196c2a8e9315b84090a1f119a034039d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4479679975baf4e211faed5b4804472f7a88f116968b5f41e6cc008014bd1550|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|46fe02da3cc50e3d77777b4e9a09869886e74191c84759952094f204e1e77541|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0b949833eea779d2307d9ca1098be1264218c25e5c5cd3626d723f08b28b853e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|bc35c7ebad1ff9340ea23e533aab3859050fe3795f7671e28f4250a5b5f03b80|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|02243477d4547638042d2e4aa9808aa7834d95a5512b59e8d52e337105d8ce55|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6cc7ac95f859dbffa81fb0406c731df8723e5815aaa5fd7252e077c22cdfd39b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|378a9d6a2327e7523f4180c8b0de2bd780f1737bd1ea2f189918a906c21d7879|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|52fed6fbe8a8322b4297701e388ff05b11b597c59f149982c679d69e47838f85|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a9cdfbfd2930a50185beaaec4d1cb3efdf7858077a5c6960da752a490233b6f2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8a3ff1da684ee2c21ec1f5eaa87bd3900edcba0e3c3fefe287d5b6b21d8f527|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|5fd39dd9b0e03b08a615e6dd12b865b50661da199e4d67b9f10f603705fcd9e1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|f59d59304ae5376c18aa4cd391ec27c95ebb2931d287bdfd4a66728025e51698|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6fed5bbf1dce9e505bfae8f185341242292943a47960e11c050e145f34d559c0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3f34adf35f3fc12bc6fa96b12f15c8df77c0c8b01adebc5de77306323086813a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8c83460be20f1db5e9cf9e4f2450a60a4c59051d808cd04bde9979eb93420734|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|1e416ce0edb5536d46b8ce5e8f406ad0ebc93e3ffc12bc903643ab75ca87435c|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32"
+							],
+							"SL.30.region_keys":
+							[
+								"SL.flake8.Highlights.|8cbe0dc128634967d621d01cfd7b576d196c2a8e9315b84090a1f119a034039d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eb0d47dff63c0daa659dcb113d13193c147b41c18de399699ff65140001d8e5d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|03b3926f1aab9d7108f163756fcbcd1347d15f1d06eccc420bcdff5980e0d680|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bc35c7ebad1ff9340ea23e533aab3859050fe3795f7671e28f4250a5b5f03b80|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|4479679975baf4e211faed5b4804472f7a88f116968b5f41e6cc008014bd1550|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1e416ce0edb5536d46b8ce5e8f406ad0ebc93e3ffc12bc903643ab75ca87435c|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|52fed6fbe8a8322b4297701e388ff05b11b597c59f149982c679d69e47838f85|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0fc1f853c0cc7bbe198e3f78228e15181145b6cd33ce98d2829bc8aaa3012307|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6cc7ac95f859dbffa81fb0406c731df8723e5815aaa5fd7252e077c22cdfd39b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|378a9d6a2327e7523f4180c8b0de2bd780f1737bd1ea2f189918a906c21d7879|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0b949833eea779d2307d9ca1098be1264218c25e5c5cd3626d723f08b28b853e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6fed5bbf1dce9e505bfae8f185341242292943a47960e11c050e145f34d559c0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4b3e10e3eafc2725198a428f887a34761a37637f7cb089f25a12e7725ee7c5bb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8a3ff1da684ee2c21ec1f5eaa87bd3900edcba0e3c3fefe287d5b6b21d8f527|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|05a248f0e6c8cb66eef89309d9b3d922091a386f50c61ae63c3eec35f81c50f3|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|5fd39dd9b0e03b08a615e6dd12b865b50661da199e4d67b9f10f603705fcd9e1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2194bc60d7177f750a1649fcc1d6f07a40479df894b89a18f150461f2516baad|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|67cd41dc9197a858a6242c481ee035c27a4f5deffd7aaf49df6ba7205f5254e4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|23cee1178b2337251e38f3c6d984cc3ac02dafa337f7b7f168ef0b376573120d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|46fe02da3cc50e3d77777b4e9a09869886e74191c84759952094f204e1e77541|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|f96eaa222c7be8331f06e8580d731df40ebbbf00ec5a17b143a5d98f2905bbc5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a9cdfbfd2930a50185beaaec4d1cb3efdf7858077a5c6960da752a490233b6f2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|93db6e68c0b3802aa2aa69372bfcd21b97d12f4e2eeb5010abb4742220042844|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3863d56752ee8c0f6569a43c8257a7819f59c5ebd2716e50ffa1b1334aa2a4d8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|02243477d4547638042d2e4aa9808aa7834d95a5512b59e8d52e337105d8ce55|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8c83460be20f1db5e9cf9e4f2450a60a4c59051d808cd04bde9979eb93420734|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32"
+							],
+							"SL.31.region_keys":
+							[
+							],
+							"SL.32.region_keys":
+							[
+								"SL.flake8.Highlights.|0b949833eea779d2307d9ca1098be1264218c25e5c5cd3626d723f08b28b853e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3863d56752ee8c0f6569a43c8257a7819f59c5ebd2716e50ffa1b1334aa2a4d8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|67cd41dc9197a858a6242c481ee035c27a4f5deffd7aaf49df6ba7205f5254e4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|049acc8be297be66b7c7715a484dad428bcf2dfa1d8d29dc81f39a0363339827|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|23cee1178b2337251e38f3c6d984cc3ac02dafa337f7b7f168ef0b376573120d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|79012a9034524f67b07ebec5af925c0d660adca790339c54c694bfcf353ee961|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6cc7ac95f859dbffa81fb0406c731df8723e5815aaa5fd7252e077c22cdfd39b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|05a248f0e6c8cb66eef89309d9b3d922091a386f50c61ae63c3eec35f81c50f3|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|2194bc60d7177f750a1649fcc1d6f07a40479df894b89a18f150461f2516baad|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8cbe0dc128634967d621d01cfd7b576d196c2a8e9315b84090a1f119a034039d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|03b3926f1aab9d7108f163756fcbcd1347d15f1d06eccc420bcdff5980e0d680|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|93db6e68c0b3802aa2aa69372bfcd21b97d12f4e2eeb5010abb4742220042844|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0fc1f853c0cc7bbe198e3f78228e15181145b6cd33ce98d2829bc8aaa3012307|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|597bfaa0cc01c7145c01d67077cb1c023d4f921908b5561ed4c9717c703ef68f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8a3ff1da684ee2c21ec1f5eaa87bd3900edcba0e3c3fefe287d5b6b21d8f527|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|2fd990351762198574a747b43c11de6a3b08ca33ff7fa1479439e034aa3f1ba2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0cf969a1f08579b7ed87ae99f561555a7702224fc2dd02f144f76033a3683cee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|02243477d4547638042d2e4aa9808aa7834d95a5512b59e8d52e337105d8ce55|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|8c83460be20f1db5e9cf9e4f2450a60a4c59051d808cd04bde9979eb93420734|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|378a9d6a2327e7523f4180c8b0de2bd780f1737bd1ea2f189918a906c21d7879|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bc35c7ebad1ff9340ea23e533aab3859050fe3795f7671e28f4250a5b5f03b80|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|4814f7542fa26d562716956dc6b7434156660d83dce8c5092d4dbee2c1942852|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5fd39dd9b0e03b08a615e6dd12b865b50661da199e4d67b9f10f603705fcd9e1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|67aced575508efeb3090b6eca4f5f6c5869f754841c593a96f68412304f18a30|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|46fe02da3cc50e3d77777b4e9a09869886e74191c84759952094f204e1e77541|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d83ba2a8733b43472c600f505ae773310bf7f5814d80764dafb61eb0b2bb6002|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|410973ded98843a701edd3e880d51a1feff0e75084b48cdb32015a742a211a99|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4479679975baf4e211faed5b4804472f7a88f116968b5f41e6cc008014bd1550|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|52fed6fbe8a8322b4297701e388ff05b11b597c59f149982c679d69e47838f85|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec2bc04831776b6034387513bbf7b7f93ccbab48f52a8349bd6d8ebb7cffff80|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc52346f5cd7747b23f9992b197dab3b9b0eb2f4d386128ed52ba1d7ff9fb194|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6fed5bbf1dce9e505bfae8f185341242292943a47960e11c050e145f34d559c0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
 							"auto_complete_triggers":
 							[
 								{
@@ -621,39 +985,558 @@
 								{
 									"characters": ".",
 									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
 								}
 							],
+							"history_list_is_closing": true,
+							"show_definitions": false,
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": false,
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 229.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "stream.py",
+					"file": "rest.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17739,
+						"buffer_size": 24943,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15042,
-								15042
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"SL.15.region_keys":
+							[
+							],
+							"SL.16.region_keys":
+							[
+								"SL.flake8.Highlights.|7267bcb5559388672dddb72ed6688f4f6cc59bcd6e80cf0ed18fd73546f2cda5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|83328ae8bdb37c7ca9f442151bf6e36fed84f66629cff9504f943fd4a0e6ac84|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2875719775112d5c1f84532c4d2f27d70b5308c076f6427a595288edbe4d2d3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8e0eb11f5f74832afec600627ad0d02b81449fdb48ef0ba7dc2087b370d40fa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e7237bc165aba5272f2cf781f54fce9992b6c4632d4af1af8894122d3121414d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|572769ac7e96bfdbad2d5f0c14c7f4cd7819993664a9bf6b886b0b488178732f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3897cff40265de7188a497f8ebe4ede137f2dd920e0dcdd1b9e703f7d9b17610|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|175f6e9f196227a559859b440ed959abf3c52cda18448819597416b508a75f58|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3d308ab4bd1ab9355e10df40cf0c992daf34f543300eef209c2239a61908a073|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|06e1216f9d0b7de201e1e948e731bf99440bc2708e6c407ad09585564eb2057e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19938cb569cdb7f75fe0f616c45d67f3828b3fd63086748b1ee4da10cdceec7f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19cd55950b71e5e61a8ab2defb62b6cc86abaa1d9b586079a8d67cb8c1333f13|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1bcd0e461f7f2f96ce7caf1f0493ca1d8122f1f5f77749ad071bf27340ec28a3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6f8457ba7228cee4ae0c9372b29ec5927f166597d5a1869c12c0d62a96183039|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a09f8abcd02cc6042eeed5216c8c261b32f968f1126deacbed47b7904b481f85|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|66928a9b6e91f05e7ba644076796895b8ca2adf59afc4661078cdf0e85f3b8cd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8850a441c85e463fe2e24aea0c24df73a6cb3cc39b56c6bf6397887a07e46be9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|446adfe1fb4741b013ba5e4ded1bfbd98b0779212d5f58c976991a88f204cc52|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|47ad8c90d0ec723572f554f57ad2f04ca2b99ec2b290f329ad151cc025867460|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef292c70b9c2dcd24a289e1dbd7b73518332b89927ffb1c8b0af526f140924cf|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96f93e9a63836a707adb9bc06b3c57e65b9729c15d08f8bce31f8c5c8817c089|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f48426205263ef67b5adb5495e973c33fd5a726d7e2e51038e7a699e300147c1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e9cd2c2237238f90e0732b32ca0617a3dd2fd7757586c41422cdac3d3eba35af|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e16dbc942bc43de8894fef6e17287125658fa1aaeb6429396b5fd6fb7be3f229|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|af9c5608b9515ea07cfac78efe64b4510e53252124adee7e6ceef1eb8dbe48ab|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|2a47b5bd8adeaa6acaa521ca4b291a0b1140ae8bb77c4779d02b04735da401a3|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|7093d258d15d493dd89b55a5a748e8748e3d1a8125649a081c0074506c8297a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2a434bebbce91c108b66a4eec8decc03f9983e7da83b748da3badf01607a7a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7011266e2b8d117f4fc5db0cec2b05b9e4e4f871baf60d90355a2b7228559ebe|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4c5c4d08eaf9f6145df47cb3e690052d1080005ac165e5de0c19874ac802ec68|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|569e7f5fb12cd989404b6b27f1bfdbbd61357d7949f6425dc3e6f34614ddb5ee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|29c0a7d92244584f6686bd7ea6a897adc60387b496f0cc3f309a6523dba64a2f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c238261e30e722a2258ba78dfed4463f190cffc9367104c3c9c40b53ea0f8bd6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|310e4a4b0205976179ea69cfd018aba0d827d5152ffce78fe172036d068f5100|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea67ff683b4e6987e68fe1a3e7ec43fa59f0f1555ed25c86c3a8bc5b09ab659f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0bc83a9d94a4e1fba3607371d34b91033d63c7a8c4ea3da0ad50caeafc3d7794|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c56d0fe7157df5c3e5abe5abf026353e6929f8d879292ba66446677bd15985a0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|46e3ccaf1ff6dde0126f5fe79591e9c346b488148cc86a0f7caf116b56e7d624|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4da5d1ace06a257dd12571f7643d13fb00122a5199da084e65759ca92cae63e5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8fb905a1a22cbbaae5ba8c790c272fa3d3bfb6ebe2fab07b6ccca90858f867e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea776dca0b0a3a51ac84bc5057468d027d2c6cced28d4b0eb69ec006b1d4a5c4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3694c30cf59a01e6369333a70d0d804d8c2856844db6d720f8cab448db905988|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6c2cb069cd3115debf68285ce3d0642fb5a06f27082ad4bab29b9fb02fa7d251|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9574e2d4c26e4c2374fd8e8b3eec618c2f4361c8f4b41637b8addb852c113aa1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d32c249caf524bd8ba855e447f54538edd715d22a6853e8cbb6c943f37983|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6f34d7682697181ea6fd8461cca34d183a49dd167954339a50402abb9128b181|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1bb72cce737875171e1e696cbd318262fbf2d403eb1a4d53f41859aefb6789b1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8d2da03cef561f25a5c2218da7c61147b3f4fe2271b8317a6844916dbb017ea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|16fd16e0d8c3b24b99befe7a94dc585a2ea6779e4340d04e7a649c93ede0fb74|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|850e23a467cad96a8cf922175168ce6dc13aef1a0e6d4a09afc471ef6e4c4b45|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6af090c0b4dc8efd27abc708a2769b8f138772287c4323861732869cab3b057e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|da6c1e678afbedda382224d1dcd74704c5c8f9e1ad3d19e0a30fdc003dcddbe0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7f4c67577cabb895da6e5c8d3fa86a118bdc7600154e2527c2421aef733dc58b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96e617e6b3182ae997f0b1154fc8a354f0391ea31b1e56bdc5a790a960d4f343|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ca8a8aa988c86dbddf50c61cd7ae1a76b871a8f95199aea984a690c8725f36be|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a61447baa8b6445fdf2c806cae99977a0c2bb94dd047db4b7d9d87ad640f9a96|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
+							"SL.31.region_keys":
+							[
+								"SL.flake8.Highlights.|06e1216f9d0b7de201e1e948e731bf99440bc2708e6c407ad09585564eb2057e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|572769ac7e96bfdbad2d5f0c14c7f4cd7819993664a9bf6b886b0b488178732f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2875719775112d5c1f84532c4d2f27d70b5308c076f6427a595288edbe4d2d3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea776dca0b0a3a51ac84bc5057468d027d2c6cced28d4b0eb69ec006b1d4a5c4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|29c0a7d92244584f6686bd7ea6a897adc60387b496f0cc3f309a6523dba64a2f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|850e23a467cad96a8cf922175168ce6dc13aef1a0e6d4a09afc471ef6e4c4b45|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96f93e9a63836a707adb9bc06b3c57e65b9729c15d08f8bce31f8c5c8817c089|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef292c70b9c2dcd24a289e1dbd7b73518332b89927ffb1c8b0af526f140924cf|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|569e7f5fb12cd989404b6b27f1bfdbbd61357d7949f6425dc3e6f34614ddb5ee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7267bcb5559388672dddb72ed6688f4f6cc59bcd6e80cf0ed18fd73546f2cda5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a61447baa8b6445fdf2c806cae99977a0c2bb94dd047db4b7d9d87ad640f9a96|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8fb905a1a22cbbaae5ba8c790c272fa3d3bfb6ebe2fab07b6ccca90858f867e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19cd55950b71e5e61a8ab2defb62b6cc86abaa1d9b586079a8d67cb8c1333f13|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8e0eb11f5f74832afec600627ad0d02b81449fdb48ef0ba7dc2087b370d40fa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|446adfe1fb4741b013ba5e4ded1bfbd98b0779212d5f58c976991a88f204cc52|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7093d258d15d493dd89b55a5a748e8748e3d1a8125649a081c0074506c8297a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3897cff40265de7188a497f8ebe4ede137f2dd920e0dcdd1b9e703f7d9b17610|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3d308ab4bd1ab9355e10df40cf0c992daf34f543300eef209c2239a61908a073|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|a09f8abcd02cc6042eeed5216c8c261b32f968f1126deacbed47b7904b481f85|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0bc83a9d94a4e1fba3607371d34b91033d63c7a8c4ea3da0ad50caeafc3d7794|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3694c30cf59a01e6369333a70d0d804d8c2856844db6d720f8cab448db905988|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6af090c0b4dc8efd27abc708a2769b8f138772287c4323861732869cab3b057e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c56d0fe7157df5c3e5abe5abf026353e6929f8d879292ba66446677bd15985a0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6c2cb069cd3115debf68285ce3d0642fb5a06f27082ad4bab29b9fb02fa7d251|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea67ff683b4e6987e68fe1a3e7ec43fa59f0f1555ed25c86c3a8bc5b09ab659f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|da6c1e678afbedda382224d1dcd74704c5c8f9e1ad3d19e0a30fdc003dcddbe0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|46e3ccaf1ff6dde0126f5fe79591e9c346b488148cc86a0f7caf116b56e7d624|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96e617e6b3182ae997f0b1154fc8a354f0391ea31b1e56bdc5a790a960d4f343|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e7237bc165aba5272f2cf781f54fce9992b6c4632d4af1af8894122d3121414d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e9cd2c2237238f90e0732b32ca0617a3dd2fd7757586c41422cdac3d3eba35af|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2a47b5bd8adeaa6acaa521ca4b291a0b1140ae8bb77c4779d02b04735da401a3|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|e16dbc942bc43de8894fef6e17287125658fa1aaeb6429396b5fd6fb7be3f229|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4c5c4d08eaf9f6145df47cb3e690052d1080005ac165e5de0c19874ac802ec68|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f48426205263ef67b5adb5495e973c33fd5a726d7e2e51038e7a699e300147c1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1bcd0e461f7f2f96ce7caf1f0493ca1d8122f1f5f77749ad071bf27340ec28a3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d32c249caf524bd8ba855e447f54538edd715d22a6853e8cbb6c943f37983|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9574e2d4c26e4c2374fd8e8b3eec618c2f4361c8f4b41637b8addb852c113aa1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|310e4a4b0205976179ea69cfd018aba0d827d5152ffce78fe172036d068f5100|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4da5d1ace06a257dd12571f7643d13fb00122a5199da084e65759ca92cae63e5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6f34d7682697181ea6fd8461cca34d183a49dd167954339a50402abb9128b181|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|af9c5608b9515ea07cfac78efe64b4510e53252124adee7e6ceef1eb8dbe48ab|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8850a441c85e463fe2e24aea0c24df73a6cb3cc39b56c6bf6397887a07e46be9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1bb72cce737875171e1e696cbd318262fbf2d403eb1a4d53f41859aefb6789b1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7f4c67577cabb895da6e5c8d3fa86a118bdc7600154e2527c2421aef733dc58b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c238261e30e722a2258ba78dfed4463f190cffc9367104c3c9c40b53ea0f8bd6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|66928a9b6e91f05e7ba644076796895b8ca2adf59afc4661078cdf0e85f3b8cd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|175f6e9f196227a559859b440ed959abf3c52cda18448819597416b508a75f58|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2a434bebbce91c108b66a4eec8decc03f9983e7da83b748da3badf01607a7a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|47ad8c90d0ec723572f554f57ad2f04ca2b99ec2b290f329ad151cc025867460|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7011266e2b8d117f4fc5db0cec2b05b9e4e4f871baf60d90355a2b7228559ebe|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8d2da03cef561f25a5c2218da7c61147b3f4fe2271b8317a6844916dbb017ea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6f8457ba7228cee4ae0c9372b29ec5927f166597d5a1869c12c0d62a96183039|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|16fd16e0d8c3b24b99befe7a94dc585a2ea6779e4340d04e7a649c93ede0fb74|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19938cb569cdb7f75fe0f616c45d67f3828b3fd63086748b1ee4da10cdceec7f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|83328ae8bdb37c7ca9f442151bf6e36fed84f66629cff9504f943fd4a0e6ac84|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ca8a8aa988c86dbddf50c61cd7ae1a76b871a8f95199aea984a690c8725f36be|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
+							"SL.33.region_keys":
+							[
+								"SL.flake8.Highlights.|29c0a7d92244584f6686bd7ea6a897adc60387b496f0cc3f309a6523dba64a2f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6c2cb069cd3115debf68285ce3d0642fb5a06f27082ad4bab29b9fb02fa7d251|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|06e1216f9d0b7de201e1e948e731bf99440bc2708e6c407ad09585564eb2057e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7011266e2b8d117f4fc5db0cec2b05b9e4e4f871baf60d90355a2b7228559ebe|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19938cb569cdb7f75fe0f616c45d67f3828b3fd63086748b1ee4da10cdceec7f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2a434bebbce91c108b66a4eec8decc03f9983e7da83b748da3badf01607a7a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ca8a8aa988c86dbddf50c61cd7ae1a76b871a8f95199aea984a690c8725f36be|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6af090c0b4dc8efd27abc708a2769b8f138772287c4323861732869cab3b057e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1bb72cce737875171e1e696cbd318262fbf2d403eb1a4d53f41859aefb6789b1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8d2da03cef561f25a5c2218da7c61147b3f4fe2271b8317a6844916dbb017ea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4da5d1ace06a257dd12571f7643d13fb00122a5199da084e65759ca92cae63e5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|569e7f5fb12cd989404b6b27f1bfdbbd61357d7949f6425dc3e6f34614ddb5ee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9574e2d4c26e4c2374fd8e8b3eec618c2f4361c8f4b41637b8addb852c113aa1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|66928a9b6e91f05e7ba644076796895b8ca2adf59afc4661078cdf0e85f3b8cd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2a47b5bd8adeaa6acaa521ca4b291a0b1140ae8bb77c4779d02b04735da401a3|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|a61447baa8b6445fdf2c806cae99977a0c2bb94dd047db4b7d9d87ad640f9a96|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8850a441c85e463fe2e24aea0c24df73a6cb3cc39b56c6bf6397887a07e46be9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea67ff683b4e6987e68fe1a3e7ec43fa59f0f1555ed25c86c3a8bc5b09ab659f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e9cd2c2237238f90e0732b32ca0617a3dd2fd7757586c41422cdac3d3eba35af|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c56d0fe7157df5c3e5abe5abf026353e6929f8d879292ba66446677bd15985a0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|af9c5608b9515ea07cfac78efe64b4510e53252124adee7e6ceef1eb8dbe48ab|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1bcd0e461f7f2f96ce7caf1f0493ca1d8122f1f5f77749ad071bf27340ec28a3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0bc83a9d94a4e1fba3607371d34b91033d63c7a8c4ea3da0ad50caeafc3d7794|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3897cff40265de7188a497f8ebe4ede137f2dd920e0dcdd1b9e703f7d9b17610|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6f8457ba7228cee4ae0c9372b29ec5927f166597d5a1869c12c0d62a96183039|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2875719775112d5c1f84532c4d2f27d70b5308c076f6427a595288edbe4d2d3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|47ad8c90d0ec723572f554f57ad2f04ca2b99ec2b290f329ad151cc025867460|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|da6c1e678afbedda382224d1dcd74704c5c8f9e1ad3d19e0a30fdc003dcddbe0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6f34d7682697181ea6fd8461cca34d183a49dd167954339a50402abb9128b181|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96e617e6b3182ae997f0b1154fc8a354f0391ea31b1e56bdc5a790a960d4f343|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e16dbc942bc43de8894fef6e17287125658fa1aaeb6429396b5fd6fb7be3f229|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|175f6e9f196227a559859b440ed959abf3c52cda18448819597416b508a75f58|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|4c5c4d08eaf9f6145df47cb3e690052d1080005ac165e5de0c19874ac802ec68|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d32c249caf524bd8ba855e447f54538edd715d22a6853e8cbb6c943f37983|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|572769ac7e96bfdbad2d5f0c14c7f4cd7819993664a9bf6b886b0b488178732f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|850e23a467cad96a8cf922175168ce6dc13aef1a0e6d4a09afc471ef6e4c4b45|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|7267bcb5559388672dddb72ed6688f4f6cc59bcd6e80cf0ed18fd73546f2cda5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8fb905a1a22cbbaae5ba8c790c272fa3d3bfb6ebe2fab07b6ccca90858f867e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|310e4a4b0205976179ea69cfd018aba0d827d5152ffce78fe172036d068f5100|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c238261e30e722a2258ba78dfed4463f190cffc9367104c3c9c40b53ea0f8bd6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3d308ab4bd1ab9355e10df40cf0c992daf34f543300eef209c2239a61908a073|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19cd55950b71e5e61a8ab2defb62b6cc86abaa1d9b586079a8d67cb8c1333f13|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7f4c67577cabb895da6e5c8d3fa86a118bdc7600154e2527c2421aef733dc58b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f48426205263ef67b5adb5495e973c33fd5a726d7e2e51038e7a699e300147c1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|83328ae8bdb37c7ca9f442151bf6e36fed84f66629cff9504f943fd4a0e6ac84|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|16fd16e0d8c3b24b99befe7a94dc585a2ea6779e4340d04e7a649c93ede0fb74|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea776dca0b0a3a51ac84bc5057468d027d2c6cced28d4b0eb69ec006b1d4a5c4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3694c30cf59a01e6369333a70d0d804d8c2856844db6d720f8cab448db905988|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|446adfe1fb4741b013ba5e4ded1bfbd98b0779212d5f58c976991a88f204cc52|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96f93e9a63836a707adb9bc06b3c57e65b9729c15d08f8bce31f8c5c8817c089|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a09f8abcd02cc6042eeed5216c8c261b32f968f1126deacbed47b7904b481f85|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7093d258d15d493dd89b55a5a748e8748e3d1a8125649a081c0074506c8297a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e7237bc165aba5272f2cf781f54fce9992b6c4632d4af1af8894122d3121414d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8e0eb11f5f74832afec600627ad0d02b81449fdb48ef0ba7dc2087b370d40fa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|46e3ccaf1ff6dde0126f5fe79591e9c346b488148cc86a0f7caf116b56e7d624|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef292c70b9c2dcd24a289e1dbd7b73518332b89927ffb1c8b0af526f140924cf|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
+							"SL.34.region_keys":
+							[
+								"SL.flake8.Highlights.|74e72d6b6b2474deb57472872ac627cf971b1757920801ea24356c7d20d484b1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c5c28e2c7f8668a35e952648a6f1328ae9bfeea1f4eca19e3c09beb1fc22efb8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fa07a61453b0a2ecfc6e17d6e26f6a9ee950437110710109ee2cdf8d1b6851ff|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3e02157dce05d649355ada6a84d859d49d6132b299891230636b9f7469730dd3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|62c0fd691215514028323a21ffdf8f9e6514e2ff8bcbad8e36848a4b0161c23f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|609f42e972ae08d69b3536c21c07d79584a7b90a53d0197beb48837f9a2b8e0e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fa47d533dd32d8a7d5edc81749502522397dbe660fb021168a9f2937ed3529a5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d221bf90b85898908c2555eafacc9689efe4d6f50ebc02f189e40c1099c14832|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a1ce33b6f3e53e9a7a2a9ed0836e7586752087a2b6b583e0f71b511ac62d40f4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fdaa034bdeaddb4d3ffb1f2b44b7472166163e2bd6c047b7a4f7d067ecdaadfa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|67194635d740ff6601372bcd02064817f282231b38e62c956d857d8cc60aaa72|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dab714695a277ded719f6a87e649e6c86a7d073762c008272295971cf0f68b83|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|589618588cf2d662b728cd657a699c9d6eb05957bf9b76eedd7f7b3b962afdb5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|91c441a352be0bf8056f306d6c46bd395c29949b74b607df3d53fb1e5ee15f83|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ddbbc2679fa39778eb7afd2a240d8014bec66ba87d18e5cf6474574c2eb81ab7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2c9c3f9744c679354c001a9449da03e34a3926e38ee422dcfb2ec66b996dca17|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c74f912d37e88f52b61b931d343987f534b8f76f0931181a94aa61226d3736f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|042f33d21288d6191d7df5c5f0d72f7799b69550c1088e6dc81e6f98799f4a21|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c6b7dc18789065b1a727fc9cd4732ea75f3435399f5a53c65770cf68daf67744|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9fbc51712dbb87ea536cb62bf7604f14e353ca6fcd6f7ca3276cd7c2454f5a5f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2c11bce30cfa16a645eab5c0eab7dcebd9d6f52ef3d1705fcec4ced52a2e1cfa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4f8cc22258ff7cb190c9551d8aa1272ac181525e67a2ab52106070d3408ac2ef|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|353073b58471b31e7668d357cfd64fbfc745391dc01666af9e51cd9b98685d9a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|85b05d2c841ff9c02d327984628910d6891fc68608a2701dac9841d37735423e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4ec69e5ab0ad1fd5f3a02af8183c014aeb68e0f222c4b85f74b28d81ffa30f14|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6da84d2d1f7122fd517a9d5a2d75dfc2e8e6de1e6a28b757717bdfce2c2f6e62|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e595b3f0662cef8f5c484a21b29ff5c303575fd4ff6627307b2db13e85439be7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fb5ca566ce75bc39d8ece68fccec0dd3781c890cfc3201072a055224f7a654c5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b3b26a26affcf21cf27d1b05a252975160174cd290ace48bf941e90748873f8b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f447ebf39ca2d504412275ff43380b7bef58ac87232817e21c868fec85b2a778|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0226507f4eed1f8d0c5516e8eb0a0a9fe9a3e29f464a42034c0fb62de1318268|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|105252313c56bd71e0197ed73e593710e7b504fc98187387126014423e2f1394|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5a977a5512cc627f095a0f410516a0e65672fd8b20c5f857e31b6414b0cfcf20|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0c0341c999d656af693947c68a42cbe2e2054bb04171a8477341326ad953b718|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cacdc7e775cd1eb7f6b30a60be9c907d7ea1fd7b7ad00dcc67142d1260d983f0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9b7ded00531f597688c1908ce19472ea49dff7769a6200e171607e3747365f20|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|69a776721aa684116e9aa7760cedba0a524b6c72ffbb61572e1240d1806299b3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2561765e152733d52eb2ace2ecc0a8403d54e189d26c7984e6cc0db7025b70d8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|59d9347688d284a50c6c51d3aff6f40d2c03b369b83d82edf91f8cff9e888608|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ac35341605b032a925c12ce1291a6e78658a7e6a39021a24531dabcb3e894527|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|346fd717ec376e267c801fd5f68c1340e51ee12d124c1306cc9bebdec44ce5de|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|244045df36ec758bd268048f6235fcc217daa9f24ea933003f44696a05862240|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9a5e4a8c8b4fc32cfe48f7aa5cde97c2fba96bd1d9e45a01266868545c8b5a16|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ed37b7eb504c88113adb6e3e143332f1928cc33a441576de78063bb363a1f5d1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|85d58561cc37dce65436ea9ce56d863d974d0a39de33c95107f1fdc7ae6df275|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0f379c4be9019230cbf37499cc1e9bd22a78ad9fc9108c0386e38d7ebda98014|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|92741edf65c4cea3f35ae24a27c657ff8cc2f84f7356d45081774421002d61d1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7898f1e873a572d0a5a440f36bc4fdfc7d97127874cde454a8fec4a192b8c1dd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f207df6b34c42ecd30e17109e655a5049ec7d0fcfdd4042700c942927224182b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b781c20da8d969f280a8325d8dae81e790d9577b5caa2a288888609099ed5434|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce699ede290f414d9a68736f294f2689ea2d5d9194d74f5acd8c31cc531c62f5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|da3c78adbf1ccf1eae452cf5612fdf4439b3f740d65f93153b16912b9d9192d9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|32f48bfe907427ca75c8e353177b05cde54f993646dca0f5672f093a5d584fea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|69578c5b105ca2f5f0855d65ade6fdbcbba57a2786103e807a200bf1f4aa9fa0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce01a26f19e8ec86030d12596bcf60dbd3408fb653c2c706a6b2cd24d04ec6fa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c4628c5647b7883b8a6f361d6b4f64990db7911cef44df837fd8597c0959e1e1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f9f9d420402b7628166de94cd8d5ccccb74dbc80d0c915082818da0289794a8d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1b68153f226c7096cad123993f2f8c3da8fbb25001c67f0f5ae166fafdb14f1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6e6714951ac84f0ff83f31098e1c728fb4007099f8d2d8697675758f444738cb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|570ff3c5bc1f54c0bbb7d69160550a9626bd37092966f55552b47b47efc96280|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|577a1f98894273739575e6abc8e8532ba6068ed9093f197d56ba37476d50b69b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3037f3fbd4a5dd6330b0d5d7b6cae87075c1792947559aba4f7f202a398964e3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2432cb14667e7baaf6e4465a876011cb1655a7c22b74f922a16314c0b27cb2bb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d2b5c5226a687a4e95a046b7455c0bb72d5ff37f1ff4877eb62db815eaefb87d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a4b080fe80359ea4769704cc7fb90f431508ec73a8be25a258b2e8fe61b83ad7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d54712624bb0c26bf5a6161cd0dd6ded72e52053b14bc0628af27823cfdbbe14|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4ecaea06d479c57a9362c13e0ae964063dde3dae74fa1553ca3abfaf08778c4f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|11c89e9f183ac8dc1d12586bfcee393c76e96b5fdd0f55ee694fdd2e1db514ed|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bdbce47515bc2fe65c4e924260dbcb4a31a429160a4e92352e24e77bdfc5a3b2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f9ce622bf36c68b24198e29db30f8ba9b3014727832eaa2240c87851733adfe2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a79474a4a2d96d8fe2c6125bad936a4ed848441865fb5187c7fafef4bdbdf465|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|29100b17100226c30387f4328f00392fa7271db274b977335a23bd036c151b2c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|58cc5e2a982b08ac9ab9384157565c07f15e35f689a6609263838fdf5042321a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c6573a16571efbda4bce02b791291705c607b40b7581df61fae05d3229fd18a2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|91453188e68d71fdf97b5193cf49efa6c1764fb8713d13fbcfbb848050cb2dfd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|770a43d68946d3d0683d182c9e1e65c9a296057eb66e706ef58b9cf0979f4046|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b8162905d6eff3ed939f48bafba0216cf091c9d5c82837f9e573b27daf3fbcfa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc8af1dc56094f19b3e14f5914dcd05fb941beafa75d2b85bc7ac94583f86fa2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1743e2c6566ab006c72dc54cc8eb39f9cfc3cb8250392ba1ea92365d9c33dbcf|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f3f77b3d9903f2d7f9980a6dc3e46e5116a96ea0f4409f8b9f5ec72b7dcc948d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a12e68e68e70fb0f86dcad5989740deecf9db0e44e5c4a4d1521803b49109ab0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|14690e9dc90a70ed81aadad75efdd4b3aa5136f174860c538ef8b685921032aa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|991e37a64df5c2fb912cb4cc4400ce9b362c2af26651ab263477d434b5169643|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b27fa1a428388bb3c77fe82f0a092b0531aa3537a09376ec8b746227eefb8ea3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f8616cb5d46f89d172a772726c61448b5bbd026dd37a1474806fbf958bdcef01|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|95e78359750b54a498422a5d164ca3f2d398dee345887bf9dbf2c442e5cb5924|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9c8e0977d4020b8ebbbf37a2df50e4350ca90a0a99ec9b02ec9d1718d41e0046|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96e435122b8e971eecb566dbca510ba35f7969fff89b04f0cdfc58df6facc4e0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|96ede54e9e9529e2c089a7c440d6f50c28b91145e8bcea82e2b1e4b0f8b3aeee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9075d6915a3ab1afe2a961f3afb3869fdd6dc7044557066e8beafc685714d201|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0a613c5776340e7a13457862f58446241a3bd33173a988bc926a4d370ba4cb09|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d21d6892ac216b8135f769dad759a4a8a0ae243a14b7402dcef53ed078e80117|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0d9e5b08848be803b94f867a409071fb010882f8b01d670ad9e0cca6a679abc2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b6b467d16bb761f2c96094e355b04850b10b758293bce2be72344a57b8d4d845|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5f01597077b72223697456110bdc38c06ae2e1f54223b40373e7db53a7867bef|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|471f7ac41d8bf19da22cb254b750c27d25a88f339c98efd0b999c8ebda118f0c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|80979cce26b3a61c99c4aafbb2dfa210beaca689cc00d1f4f58781dee5a82292|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d30fb23ecee23b3b7fe79c09bde856c87e55ff0bc88015bb842b744da5a7a0b7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|99c482f4ecd79fd02ba0f68d0b30674fb5953475a746496e97ef4afddff649a4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8af3063f72a9747e5b6f4f8a00c749a4f51f860e1eefdc8f23501f6c60a48b51|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|33d2fe9e9451cfec29874f300b7fe8fba02c917e87ea1ef1a09ba62bb980e980|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|78dcc25647282f35e658fe3ebbbb732a7fb3f4b961803dbe4ec4b603c6d38a2b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|832d9451122f7bb1dd131558e636816fffe8b9a75b9838995591ffde22198d4c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|aad74091ab76d371565ed2cff6d3035c8b897cf349157aab4d0f36377722137f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|807ec60035815ee7389eaad4d8dce7219e10b20bd26a50b50fa6a2acad625f7c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2152a8cb9e67e276ab6a7cc6b32b8b6b431913bd3c833687834296b69a6fc74d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|327c05f01e73fd45c468f804b918fe0f27c5782a107bb7daf49c81b9a656336e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2306b96f9efb8f42966a4263b1f148317a8d93d13f087bdcd9d7e4ea8023bda5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ac66ccf80eca188b7c642b306e9840f8f51a04b3ea75db12b3fac52cc6ef02ce|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|47ca4667ff0adef5c97fcdb155ee48f4f4cbb2702534de06554de469433b7218|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|80fb8de60b49229db8d1c6bf8ce9c9815e263f591d50040c76296f0f854d275e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9c0b1f7b644578d247415db7220aa67bf86276939eed3426cb3ea963d98e926a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eee7c529952578ec3b0ddc42a49217940c0718757c3dfb76ffc324cc8c2ece1f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c5dea684cfd20e953bb80b8e3a8ec5e964c9546c39b3ca7e593b2ceb8f0c21d8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|173ea7178b4653c29314bb764c848f1e68a41ac016e54b11ad8c1f1166d2c41f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|66928a9b6e91f05e7ba644076796895b8ca2adf59afc4661078cdf0e85f3b8cd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|47980a38a4c3a3e4eb4a1201480bcf2de84298748086952bd7b2b161beb7e89d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2bb45a140a974b4a977c46c7c95e080558e0c39e3deb0924cadb962ad68b98ff|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|79dca616d334c0f52ea95c3d63bf47728d43aded9eadabbb231d6ce3a71c467b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|58a6aa372c5a5afffd1de949a1f10df8d1afca38872ac958b469f10a89bc4be7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ee03084eb024d021f8d9d9670c6e0aac65ca2c31bbc3fda8b7dcc8e164b49ae|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4c7941962b2168a88464ca41dc097bcff6f91b7dcbda24a403a5298b54f9cbea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|80f266d22e959ea5c355dbc82a3fb8751319f0d0b588335b29ff4bed03ad168f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a0f76b24510051e598a683bcbd2f5388f34fdd8dedbfa44f75b0ab63a01c9ba8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|36750abb3700fdb9529bf4b89ef51c59437bfd8d3bbfa3ed9790157fa5608cb3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|981daf1ea11fe9f61f36f3aa400e012ec2bf924f2c97f8c9d1c385c1dba45b6d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|489404ccbec9db255ebb10c256637792961c1a11f7a41b0132011932e6665fb2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2d5fe9d8567cf5faf07dcc78832f561f033a3ea898992de96d3032edac441f68|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9e2e1f56bbe2a93f97f526a68b04df1f16da94599e606e2a89bfbf0a31f78e65|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d29c667d85fedcd0e1be1c44b09363c994eaab035377ec046f393002e22789f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bf5abfb3f0d8e5091c03a7c70b84ad5ad41033cae6ec1fe483d56f5c9f838103|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b661ded55a0e638f7fd56684e81d5aae676e895bc012e6b46a0bee0afc42bb32|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c6901d8e84b3d0ffdc5a1ea0c6af039c3cd6ab252a473a60c907d857775dc12|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8de1417ed2df341cb60153c1d45fd4cc013dab22ec3e2b2a7783cfb554c977c0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cce6faf355f3d6b138aa3266005cdce3785734919d0160c380a6f771ad55ee32|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|926ccc6dcd1d2dda766a72371c73fefcc04ed339ca15947b421abca8c7782b77|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d65ac48287492d51bee1df522dc8b8e5d469cd44d91fa65aefa9cc18cc25c9b7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|addb8a65f698fb775bf067d222da8fcaea1deee5cb7898da6cb01f7a2668d1b5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b52282fb1274f3a561473b82779f2530022c95b58e5ee1bd3a7bdd945513a68e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a1f136190e470cabc9e975f18b23160807120eeb47057a492aca8a2e7892331e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|777c4585dfb5301a5f2a09a016ecd8f280e92fa044d2b7dee4640c806094145f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|421b0857658d3f735f8f16a1899c59a154ec043cf6f33d70d693750ee782b470|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|88c65948587ea06cb60747d31d009c4a7edaa09ac155ccc7206f3eb34d2de58c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c98c9447b4b9d63a89f263205a4d7ca841dabf83d512553da5a92f11e8d8d8d0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0d09de17b8dbd896ed0c56226e1b9e6280b946e02187235dfb819376c7279c0b|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|8ae2da14260556e2ccadff01419d4e7db5ae5a6a78277f160f5b2605113cd5d4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dcff05053e8b85d98b867a3babce5c99df74c67e422f0505c7e2439a20adbc6a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a399f0312ba66325c9d055ed3caf396c8166ef486b51712c3f497c617b4963b5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d44d70e30bab7deda8784894e635183018a1e223179060f1b78f655ff04e7e7f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e233be7906c46e47427dd91614a84e7476959a7c7e1aa5f0df75ed9693deed83|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5d502072b6679b5c76c5c242dfccf9a17e63af3d032b36e01e665a47c5b9462a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0297bbafcce11a8d111b71939bd98e11d8c125131a847bbb7ce422277e2db6a8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7e73444fdbc41d1463ede1ea05445aedc36423fdcc939322bd9530ce2ce9d708|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c333126b85ced85e30be9222d4a5339f7c89f8cb75554d91974eca49929d78c2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7f548ba8f9af56ca872a83ffa7604daab9b0960f57b4af9f64b9b315cbdda220|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8898312c5e3751a9b5272cfc7059506c496b41742e6a03164b70c602be450930|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|16cc778d594b40281ec83d21dec5cdfd8cc480f68df87cce0183078e772c67e6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dabe8d7dd32bdef8f92472621c01d14fc5bf90c23957d8ce3dc3bc56a8fe89ef|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3fe369f649eee40f89fe9d0bbca1a05b2187198892e9a2bc4e100b8972faabac|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|89476111d0a38be0a08ccb46b344efaa7af3ae9ead1edd973b2b2dc1c0e69af4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8e5e2d201f7d5a0614163c1e5ae2a068f3ca76e3c655bc0455ec03b7319bd869|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fba7b47e034a1297b8755cf5701d26553778af18c0b670aecc6e41f151cfd4ac|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f45c7ebe0a2e97c8d91cabfce771a9c2acf311670c29e24ac4c35b882cde6d91|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1b3f653047666a59c0e704562fec7318e5468e5b9aa564dfe2f4a3f143180a53|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8ddac167c6cc78b16eee63a5dd19978c14e7a261dcdf7a492c946a29fee9511|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|65a541b0b40ae73c7ae9b2a8d6f668109e31d44175fa4b1829ae1ee6929aa852|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8263c417308335954e3f03cccbe1d536dc8e770adc0ab751106ed5f307adacf2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6aaab2aad27e82cb1c992be4f87d0c7a92f1da20a250ce44e66f149e22d4c06e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|349a3e770e5c66732cb3ae263eb666c0789293848ecbce3c51d024ffa6acac64|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73784af27cb69f0e129df4fa1dcdc4a5fd88f1fc5d8e02ec77381c25dbae8af6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|304de00322f353c7c86caea41c7ed03af7cb854e4eef7aada53eaa8eef26074f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|936c301b358a386480c226e0e46197bcc78e4df0cdaa551d0974b18a2862d3f6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19734f061f2380a2f45fd02e7233a629187523f739b7d8b0ecd6acbc88d50739|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|87767934a89c705214cbce5fd4653abf73bfdfa79c496906671bf71d17157d47|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ca0273ec441a3102a246a24408d23d62ff83ec8f553c724a30dd9686a14622f7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a4251b9d9aa2f71daeced937e048f0721582b984caa47fff68649e0e44e796a2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3ac0224093d5c42c4fd2572d7e0717e9275ea7d67c51e4ffcbbb924846fb78e2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6ba8decfed70838e4f61ec4132ecac668a232114970f5d938fff07d74210c0f7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|af99bf46d56cef1cc9f37df39c53d0758d2a85acaeaefa7def91eb569ef87925|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b179f25ecaab2efe96ee4ed3f77e00f72c09cb9a1fdb2b4fbce562d44fb43779|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a65131789398b7eb15fbb3f14cd07837d7ec66a8e54d9fafb2ded5749863a2a1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|679a5d471869fb631654ef50d97ddc3d4ef828c34bcd3266b95193a9352040ec|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fc7c325aad913a983180552172fac99b8d68894e996e6c8b2ec30af93d473c65|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1a9bd92f188aac7715f5c03d5468470f929c3f1f0a41ca9297ef6a919c242a7e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|896817137b923ef84227d6fdc43155af8dd3af89a5f1909028d208030109c2d7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a3142103277765b47d3db0af69dfe1cd8d08dc5636e3a48f32b62cdbcfeb5ab4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce7fd4f92b38588fe58eb0f334301253e1ac8ff33e0c075453a73c7deae6539c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fbea299bb686f617c537f923332d919ae24c17b7cd31436bf0c72299cb229fc2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9b7471fc29c08221f3d306c147091e6641e53f2a6e972a9f34b0f9a552e27c7a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|85944b8ffefa61eff4d95e5b61c7298bb9a5a6d50544087c4bdecec8a142ba54|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|718e6b48cb0fe1a50a48139e0b7854c1f65172969475e1f5c5e4f738740e6ac6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4301e5b2e75065f8587440baefd7a735b0cb6faeeed5170154b67798b0822af7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5571b46d316a8a73f576f2917d50f2352927daf5feb75644f34e5df26cf82aea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|85bbf0a321aad3ede92817a829174c60a591dbaa10d434744f0f47324bd91ba8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|27e1bf1084d7eb8b6ebf17f6720b80c0e7b05b327856ea39342c2899b5c559a2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bac07a2fa7d139b267598363c06b1d7e749cd000476ec9f89eb19eead4bd439b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|98977db1737cfd76f0b3b0d526912bd060a38d6fd5a8e2341f0900d0a2127d60|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4405f44a6d487a910332b5c59b02c0975396f8540ccc74c1915280e3db45156a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2875719775112d5c1f84532c4d2f27d70b5308c076f6427a595288edbe4d2d3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d242101a9fe3751f5fc71674106c2e1dffee2aa9775456a6053f7160995505bd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c5b7ad32b991bce2b6e0fb19c93023693bd0ac03059ed2cbf2177a5275e2206f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|54cfd72d38bac46fdbc95d836148487939c2779c1eaa39146a214e2948bdaefe|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|db7376fa00c9fbef2816bb9ab2bc9560fb70ab6b72ee671d2581cc7ac7f76907|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c96bd8e2aa3515712649ad64562c4bc78e54444d51e4b3efdab4fe7568efd010|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2aa9d38972db24f304c923250d1ca4bdf2392a1c0adf1c34d85fbcd76759483|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|10ac3942e4eb3e5cd6e71123c0c40c1f6be5a543f3a6d35222fc08f0fb4391d3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b55f3a1cb672fd101fed882bd413766cdcc8fda8a745287b7d97608c9879621|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ace6be13f049de57348d6b4d7d3a4b7bbf9e47de1a6ab8f1de2b937b186b9058|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|57eaca29cbcde004b01dce65d5d0411b0c577e263bac373a763ac96f772de20e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3e6252f889ad49022a394bb0ed726d25bd1a8112adbb422cfe6846932261aa21|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ffc073eaf7bb3376b6ea892b489f5f3a637f82435a3d5eb02867f5873c03166a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7488d8f2d1948d6d5c01413094a54c55fc095ae557d3af4c5f3ca95426fbbec4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60118104645fc2921bbbce9c6aad8f52877306f36c0071d6dfdb9a9c4048f989|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc2578e8bcf6d9d391189863b8fedd6cde428f96b27320b84cbff04a313c91a5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|83ddbc32e30050ecf886f166aef5ed71acd86ffa174ff8a47b955d5ce3cd6aea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bc67f321e71c8856c2658ee22a79815f377834105d5e886cb3bf1c4a4468033f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3e34243fd28180d261bbaf6b4bd11b3f4557889f420187f56f6f3a224800b8a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|e6a63da5ac5fcef928ff05d8d3a30e1154e1a49839e528324c3f906348d8d828|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1e6f2a39bee90b61a63b0d7c5007ab4b0625bf2390ad987bf075d24bf40d1660|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|28cc6ae208bf3e326b2dd655f70d238fc7a4dbef3dcd25c37ce0318c082cadb1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3e2b9abd47df490f95acbf7ca336bf6d6c4421ce8964e4a4f0ab8d9330e9a943|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0509b6019c75a572d3ea61ba59d4a06f9230c7a6de27f8f77bc0337f89cc4e35|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cca37f700433c3a499cfaf8b893147fd7421580634fbbaed08c4d66ab239813|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9d8c20b1ddbe4dcfe265e29b9f914c8eb4685943dd37f2adb1af1a08617456ee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9499642f7291b713ae9c2bf095a1060d1980bdaf802e66ec89925889b5eb1531|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea751148458d515b0ad1d95aab8ad2e8293d05ff8b788549b3da29599cf3871c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|35620526a7c1d71c486a42712ffea888781ae68a644fdd7e1483b3d572d066b7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0aad61602aae8c8b1d9dfc5a5691eb24153882c55fb75cc79fcbb82adba93ba0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dcb1c6e40989eb9b887603e2bf5a05218fce8e198ed26ebd673a6ed34dae1270|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|551929d31a1264b2fa823eff2e65b76552f0a24c7cfa463ed9c676379e19e72f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c5ec20c99e78a9592a537aeb9410cd39d81c50eaae6b31d032b9e84bacbeb72b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4c1792c7691879c724497c2a516a9827e819cf4be7ed91591a75b01165a19867|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|48c4f4bb546ab4a0a510448eeae25e1dd7431bf1ec91f9755e815cae9e5fd5b3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5a138e488f3b54da72d7e2aa743205194f741fbeba7818424d115999865dea28|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a80621ef1df310d26f4b467320a0eab5db9352b087205786e77154a2d311af4f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d8d2da03cef561f25a5c2218da7c61147b3f4fe2271b8317a6844916dbb017ea|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bedad26a9a7267aef2b78b4ef8ec3dea4a9d6bbe8ad3c87067f4474c4cf0d760|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c7f1464b5628cd5139fd1ba3d1c8dde4e9984f0a0382013a9cef17e463496067|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|07139cad633db4d7fdae1ca2204758b10693b777a4c790bd3be91337af70084b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2f26a88217e2300fc683908a2ddc549e7c8bbe760d97f2f44dfc11fa96498035|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|52f89a3669b68ce0c1ba3987945dd8366a817c9b1199d01e5f299ceaca349a7a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|98573c5acd48f98413458cbc675bb148dd8d6c40e84af946b8c41eb69c14f150|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f6ccc7002d642494f8e2b8a9024e0c03b202e3d5182e408df64a9e070e72833b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f8e27aecce59489d27e4c2ff55d9bbe7daae04eea752261254490cfce360a14f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9409efbf81ec9a102c49f35f0c31ed42f88e1ea2246c66236e37bc14fe3f1dc8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|673b800fefaa6f92241a1216a5139b0c4c9df796d88631feb34031d931babd4f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e36f4039f157b68561c0dfdc3c4f2a984d47e01ea53d59d4164315f957b67b4f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c0abb4367ff70379f2a23f101093f3297ff6a37d4c7623ff6b515e556e735732|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|da8a9771557e1542d7635c74b64382e6e835ec1bdabdf8bf241e967f3c0cadbe|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4e0ca03d3e114b93008d7395e9a90c1d1c4cb04b38d026f28135612edfae1d6d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e16365710bb50ede530ccc60b8cb74e11cd6d0da949601a0994da1c7edf18e87|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5982e0cab72d35453d84730182a654eb6c94460793e1996c7a223571ced7ef02|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a5a147bbce8624e8e55a030b255c04452487439001a2811a3394e04ca5fcae72|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c4056b12c8ab22918e1170a0f8d187edd8aca278495df76334aa337c788d2e65|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|43abc679ad44c7bbb67da9c61b496457e0dae330afa13f3564a1e18376de050c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4f76ca4f11e61beda016e8ca9c17623fb7fdf7c30f8d1e10d52754295b801ff1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a639e0c9a0485694fa38546707841a0aa6c04e9cd0a956e0d543971d724c175d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e0acc7f4627dbdc5752157b991cad76695b073172644e7ffefdd2f8bced7d1ef|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d27c21adc85ce1e633e617639920bfb8d8385bf1d4d5de874b3cbef2d959bec5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8d0b8bf75ecc4f6379644fc88822ef27c597021f7fd5057c9b0f92545cb0238f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f35e9965d83486eae2ed5d03721171b1694c7dc4715e3e4d19b2938f93d0a512|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|da842cfc2605ebdccd0c063a0a68a54bb858f4dbfff49fcac9a8b0147c54a76b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1f861ba44a70e00e4d2100a5bb52f6192ea7d0ffccca5cd54d1421583ed66b9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f2b0c9f26034a83dfe36c77d972d7ed4048d28cfc27b05a754cedbe822ae4490|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f30a58fc602ec1882e11145e1af94b4431022b6c46f9c51649e4289e68b8edd9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|acd19e9fad4f5823863af41b4914e196ca631c76666e8c9cd235418f214fea2d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|76de6e51cedc1ab5768d3346d9a088edb02af841645c41c6e089555de8209b32|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cdbfd9fdbe8d421b8a441f23fd83d00381d34dce6941ce80d0e1798e383b3a89|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec697324aea2426ce7d0962c634ddccbb5737f664dd134a00817265af1ec2905|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d6ea0f59aba9e84fdb3be1ec8228e4ed8000d94b9771f79b1015227065f3ea2f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc5f659bd93fddfed179cf976030440dd21b96d3aa90405452cb898ab9028854|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b3943e7f1e634781d496d7f7136a86a10206d792719b548cbe71ec3551154315|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|894a3ea2f989e94f6fd3974c5a777d6555f667de09d67deb645d17715300a9ad|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|42b3aab3665f7870af9a4c51ea635bf6366a6cf026c752c6843f4b5fba9ec913|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|278d886d0d510c0ab503626911608edf395dfd5889626803a14b65e12f01b206|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f017c4659a688ba06859088fa3be3170048d035e5e32ca6821a7c5b8db43fc9e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dd5c553cfeeb16621fe8bfa5eb1656c3b57d74fc332babfbea76192f9a72644d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|caf0b540a1a5e32964713300d6aef2cb4b8b836c7d9abde2ec4f124c9ea54128|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|df9e89683508b7b0df2339b2cb5f913540a70e0cd3df780f7052feddd099a6ef|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f7dd33deaa19c4a63d3e7a872c2112b7e7b439ff73f30d78c6f0a049c99e97fa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b36b1bc2daf63c2613b7a6d0818f5238d8df0da2a67620022da2f8a13d0711bd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|04eb772acff887a8f56e4ea0d8cc2430824295dd728ae25de0f55aed66e6e49b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c2334bce5bca719069d551083d15ccaa873578b86c4a7bfc7b30920afcdd5a37|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2c177bd022fc295a4cf8c06774b39b16d4b4aa0b8b4678fca8c62de313e021ef|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8e0194f302ef487361f3a7d1200d73fc110df6eeef3052d1a7c4cf0c52bc5330|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9cf9a0d041247e7e3a5b242d658fbfc86006548fd3ba7d98b49b7cee0ddef7a9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dcd4ef0952d645e1545e2084de67146b323cdef8eba5313abcec23bd6845dc48|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73b3073f7664a3ba384e69c601afc69916f20eb27a756f17a050d5dcb65d7b0d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8aac7b5f11b7612787e3a0b797a50cfdb56f703417b069daeea3b9cff12db893|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1431c5ef29c0e7cff936ea319df6158802b901a29d3d2c55397af91b302f585|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|db28ff71c38159b68f5cffc7610e85e60916148a6e50ea9127e72b111e994876|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3d405709878c8eb28b6c810dc3dd167a1ea98015901cdd33c09cfce9e54cf5f5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|05fcc6746bafacc38df1c6d267687d2b9cc9285754fe97d8941702583a9274e1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|403c75bb5cab648df90bb383154d789167312611dd36783374c73eaec6cf2458|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7b81b506f4f2ded14954209d39a4267882c0ba5c14ccdb538ced5d3065b4f724|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9fe2c6494b5dc2663f2b3be6a7899cb022528ba96020fae4e3a6193f316cc1ac|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b7423ae14793b20efb505157632f13dc3732dfec4d3d6aaf79dd99b8d59b04a6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|709941783bbad33d095fb07c68fc4c4c3754ce697c31cf6fca01dfd44bf14bfd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a505f97557e4cff75c246927a597402e5a9c71e2dbce375b16220bf4ddc37643|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|23d7111435d039c0553f52bcae6db3964b50e52cf1da42d2c0b7287b8af078ec|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8d95f2bd497e835b5abf24981a9648f900bb02149bbaee5169ece411d3a9a9e6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e14468f3bff6a5a0b1f8ea3235eaff9e65ecc102dd8ba5395137008e346fe84f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|014917692b52126bcb1cc71d320f0ce040cc3969ef789b0ae6a8496e33d64ac4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|72d829214233e9b3cfc56b10b5a71c26a3eddcc00b7b2a7d1fb5c4e7be8078e7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8c2ed7484b3d191355cbc760eb1670979d0f630757cd845d47b6bedf0fdf9f91|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|769ccd7e67f573839c88e5302c0d170401ff25f22d58745cb4dea7e184472869|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
 							"auto_complete_triggers":
 							[
 								{
@@ -663,8 +1546,246 @@
 								{
 									"characters": ".",
 									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
 								}
 							],
+							"history_list_is_closing": true,
+							"show_definitions": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "stream.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1262,
+								1262
+							]
+						],
+						"settings":
+						{
+							"SL.16.region_keys":
+							[
+							],
+							"SL.17.region_keys":
+							[
+								"SL.flake8.Highlights.|c880aba2a23682ce01f6fb95f871c23f784edb3985f2be9ce15db17194488afe|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c70b6a38eebedfe8c5dd7797dfd6d408c7ec9fc371be54c7ade8a805127f39aa|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d13e73baa81404bfb039427bbcbca2f0f4f9a4b1dc8188febd54f2f8c81376d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|607c099c1f77220744af8493148b6eff6bd808fcee554d1e8f23b72bad2662d9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2e3ab85805543d496ad8490717e17e6471a1ed9dfdc4ca5fa47314d113b81c4b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|099a0920e43175cb61d451fc7161a83a6c8d8b3c0b1983e05ca02f47cab0d1ba|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|80cbf4b486e03e62ff0b94369f4de36ee13af4738e3cfe1d971cf39b7e6423e1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2450bf1c6aff214782dda5b91912a57c8e2093e70091ee52274b9a72f2be21e6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7393c03fddc8cf828626639e5a9abb7f7cc087bda4ed6f0d830cb91ee03884c4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1dca374bbf0ec80dd046f392e9184fb75889536f8510c8dd83fa6363132a2bd0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c0c1eaed80acaef66b311e822017066a7374d1c55d89032045195d39d46ef808|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ccf55606608c5706c93bd1901677a6cad7d4df06b85d62ef5ca5f6fbf7e8821|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|af50f0626f91e153001f6cbf90b1a53f7fddca329d07dd23002c5b0a16cc8955|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce1ade8aacf5fad56727ba7ad20fc87c5c3f5a5969b228cb7c1859b69f113252|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|876c421633bb2839f0a96acaccd4375ad081b9b8f43fcdfdb3faa2222e5eaf9f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a14f8de64c8d281d1557a91db4551de52995f8b0e1c72c9348c52d9d1cba6352|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6ef65b03838a4d0e3de80676444587c82a0f1cfaea3e72d323c395b7cc90638f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fb94f77ddbe79c097cab634f5e273b0e31ccf085f59282544df2ebeb3258d568|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9adf1391c1634a179c1e5c4282617d75aabe95ee35028392a1946bfc780f9ad5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0388d29c58a899f9ffa7c55858eac9ebc55d79da6ad74461c115a6f9f2e1a447|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73258f931a98f40931b02c8c709ca7bfe731935ae51d420433d9a6208886b997|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5bf673e9688e462664af887391ed24ef11a1e76bdfd3d53a5a4323d9f3a9324a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|89294bec3d61ff4430d402644767c703adf23389841d71c04797e7a76c6581ce|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef1435dd03d6f61dbeee4ce0884ea230ad340c0b73b284d372413b1300d3329b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|27a33ef56af98ce4d507451476e632235a9d53043b9748d3001692fb5a565f81|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|800b47174b4c853a4c5c6f2d067a8409d6bca7c471b2d7c1d7caedfce88276b9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a31a3f15f137f93474a8d3db1d03ec17ca1a08e1e313595e64ad313a927d0875|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0a0e0e808b80dc8e1020885ef26f107a9a007279de67c068fc51beb26e2c75c3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|998447f8e28447c6408ba1918513df3ebfcaf04b1eb66e1a2b7b4d6186759740|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4cd085f83fd347055581e2e793411af4d96d9ce0a303b59192b60ac7b2a92973|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|af7ba3d3290b4e6a7c74c09ea6ccd7347896aa58b756fa82da9c18c75c21b8a0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|47f2d86b173a7ffbd5906b25330647e191b1071482520db8b800001bf636f7cd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce20df45b5ba44f891bfbbe309e7eee2fcefc508563aaa062e5ad8ce962b0606|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d26e84e3fb3cb00cb0fd6b8030f5de5bd4e6b48a6496667213118442e1e07fa8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fd7e8cce447e4f4e9ffad796c4837eeaabf8ff265581525224a566d3171e36ec|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f36030fd15c7c242a4c29811fd5bb1ae92d8d40f2fe6a7534231631efacc668e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|0a6b17cbb9e9f1bf9105371cd492849b3e89fa75562522ab8c9350e481d49657|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|50c8e7149647d74042ed7740b7df644604c5737519c906ac7b0f3dd130791d43|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|38c3c813c057b0c9f2c64fb5494eb6d6b60eb06421bea867021855d5f28b4cf2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|908352140050023c2cebc83eae6b2afb56db8135fa82cea76140f5a959bf8d21|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1abd76d5d82b142b7b99c3dd1c4acfdbf287230b8071196503b52271bb67e85|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7cc07a01d908f09eb34b69838abf5cc4cb22076efafdbfece89fc72184ff8514|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|899a38f1b61cb9757b7eb91e3ad68bbb0a6e1da50e2fb7dd9e6e3dfba260c4ee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cf651a522700536cc5041b733fd17f51017fb0845e962abe0d547a408469ab7d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9cd14b3f280f522dfa29662a35fde12575cbf3591085b3c4fdc5f4c22e20fd64|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|30de61e8589989cb1289467ec9ba4b3845f08a85f391252eefe4db944887005d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|089149284c65eb9e051ae71ef288e1f71303b70a5da4c7a91e25545339da867f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7709dedfb5a6cf3550eab964641b2649dae518f6aee36a17007f16c1ccb27942|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|612dccc83671aa2a30ae1cfb7f9310301cb82f4e9917087681e9e65f10071be0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0959b80800ca615e9c0700ba152f1eb85ec112eaebd162199920b71b52f55c10|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8ef435569c599a07d2f7166d0c730f683556d83a5e344b99c89621b1cb3a5d5f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|161861ae00b9797f94db441ee2cb9291173ce217a17bb3c5632f7969741d6bc1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f5d9ca77ef6f6ec34ff1aff00ff9b2fac96d089662762be39ef79e6b694cddd1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b8d23985dc8e0b5c8caaf793f1906d5ac07faa734522e82bde68fef928346260|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|27dd414f7453737d07a93297de18a696966da3cb1c495c94e0c20b43960f2b9f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|018527a867d5fef70d13a5085a958d99aa18aa6bb21b44ca090a4cac79a4a14b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|01c1de7df2cd0a166dc21b1a82f1d647ac994bb8d9b92a088848bddd9ddff2ee|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|3e8e23729fc2b7972805c393d3e7759c6515ef9a2924b91a03ba818f2c512bf9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6159e2b129e3a967cd5f2b4cdbecf1af52949f31687cb50ddf9af1972930c203|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|faa2e72e167e04c299402292350326eed8a4e3ae3b796b4d04853266439c05a8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a668b98bc621128e69a4073f6de1d64e6ab2b368d122e7bd0389a2f7fd1f5ce5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|255619c22b4234b9cde3b1836c47411dc0e28271f024d40d070743204039c8ea|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|c2d994e5654f05c2b62bfe47b397beede1fb99f8da1697f6f4dd0c91e93e1788|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|770cf13613f589ec05a528855b62e83b349064ee554940cc6512d301ff89c755|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7582d0ec72217db5f010a1817787b5d540eef944d6c921a7c30fabfe8bdcb92d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a3bd63d7425ddb4174db357f44dffd949024551bf2f33816ba3f4450272d6faf|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|55c8a1078a56dac21471663cfb6ab3501430fac019981c2b6ac49303d4dbc1a5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c81517d409acba94d16a5659331b603bc67a740bddc4031738376842121da16|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b828044d9e7457d2dd5cb4b29539ceb83ca3927056756658e293bdc0adfe9f2a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8bd8739fe0a745fbe78167172e85688c5c5da5f29b31ca042b124fd31e41497f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|903a71d08e47d3fdade1b186b735fcc6d22fb34882ca2f75ab176f93eaedcbf1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5e3cdbf805900b80c2a7c12c3dc62db96ace80c2921e616198363f70125703bf|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|91d6c82c1888835e5c0449b475d180234b58a286fdac242957b3786cbe16eb8f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d99f70b941ea7be1ab1f3683cc559a7af2884691684e79317267c2b0ffb32eee|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|33f1ac6f56bf0454fbcffa3c238ef2bb10b478b0755db59115ed3985af1b1bff|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a3986b1295efde9d94f14e4a4fed76ce918ebb87f7717a47b8d5e336b661bf6e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|12d1962d4d10ee883f1c942bf5be8dcf427496eb9e11a76ba071b70b75a5da63|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f77482d4232a114a7515854b28a72a8ef707ade5fde7582ee5cf2d82c7fbaa49|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6213680ca13b897eddfe95a1c216017f8bd799cf860b9ab0d3b4bc70444a7aec|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|901c0fdc529b35cd297857bc0801205518de8ff7145bd5c8d4bb8d5d11afe626|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|65ca785528c9290976aa5d26913c9634a129d16b3a6a1eecd8d2a75d770ecf21|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|62b59aa2cae40caa0f9126c3d1db04c5e399893ec781d9b496aa5d10cb91b2bb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5f8a28661d2910f65edd658e4cdd2a6d4f033f1de6c86b501186468a3647203a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|df18566bd92bbd1f45d747b29f654c883519fc24266726bef37692d369079fbe|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|643074462d63358e1569c64a232e7402b6eaaaa3e1c7938a5cc4d69e9fe9ab3d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|710a092acc0cf0d2cb0f481e3741d70a4a467b79d54493b129569c0b4f4b45c3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|15753d4a63f1f6903a2194f4472833bb22df67e48fd91c98045e7ab6b341f52f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|356ca2833b6324a15cfa690f3631c22365542551ea4ed0579d7c240fc136a514|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3378d5e74bea6f60e18373b198c6254228fd488f0f0d8f6f916ab8ce819a1c05|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e3d42871de73f57c6bdb714dda05c87d8227da917f4be00cc283faa9c81346b3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6ef0c739eaaa1e3d196939b755c8e348b17f59dd896c065dac39c7e81a30b8e1|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|8605f341e645150ae79c80b1123287bddaef0aecfd0daf9ecbb3ce53211a675c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3dbf13c5867436bb05e666ca495cacf997fbb0696a57a293b9971cc6545b1853|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3a7b4c654879e89754d2df4ab290a48712d2ff01bc6533e1415bfe8bebfab755|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|62257dd706ec1d15d978f4ce8edcf3f2d0df94ebeec142b0e91ca12859c6556f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a5ccb919ec1a95996e915b0bde462d2dcbbdee5987d23cc0db8bfcaf9353c026|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|545f625b81a8ee79a6cd78eaafa23066d3bdb59eee6836c4585ba7d72b8f2359|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|28df516aee5c6af13b64cb89ffc24cb70c958e2bb58d7d6efc2a717f6392da4a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|87b74e49fd1064a66a6767aafd9e0eaac2cb3d45c287e40bbce6933f6c96187f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9bf7e33873b4060b7bfb3fe60f7e488be233f55e4c01babd04eddc429dca7187|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e3dbeafd55cdbcf4aebfa144f83519b4a9b8871c5579cbf7fd58b0e85a6a5a88|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a1bbd44a7afab86da25d0a9d8cf06a42e1a88715967771950f9a708c35068461|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fe92c307e4021be3e11ff397fac5b9b3fe52679b414174f96a40463eb975b87c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|995db76fac883b24294da34a2338d2495437cee39d211a422997d344c762c2af|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a17453017387368f42b15eefa8823667536c4ea6b10f310ea61bae9a750d412f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|29a3618762d699695381f5acf4cbfe7178dc5e3a3c1378bd2dad85bdbb5dcae3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1c959bea1bcfe46852fe396cf259b1872c4f582db18692f36893b27d8603077f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c18595a9b1ad63192d59168a7274bf188c894735714b60c1cfd3e40c8671a880|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|def66db61787cca1f20de00c242719c10bc9d2991c53d4d163ee617f3514cea9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c9e29103fe040bd5f5820030e2956133324b7220f4b5d606ba456c91b12af86c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e51b2695d1ddc47283c1eba3eea08115c9cde550f7aa2d857c03f9c743c8df00|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3b09cd133fa43501b5f0e36fcc497fa1359bb01df7ba97fa26bba029f152e79d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f2f430ad4a62da2731378182a7c21a9d7110723d521b08094538f924aab133b5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|00f93b4c8665fdee90022a119d7a8ae23e53232c8b03c97d5acafd90391ea8bb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|85d9076501308ff80d0ec989ccca862a82c75a06e95ff458b90b4abdac6dc0d2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cf88251de57618cc0d2864e92b5e3a7eae45bcc26f171e900204b878e9117c49|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|dee33e1fa7b6f37fd7732c50760c8674f15230487448e9bdb5c993c5b2e18fdd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73a9a27b19c8485aba8bddb9fca1e990c420a78073e6984ce52bd24485e5f664|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1862484a4b474bb2be284bd31812c5ed120e688a3da32072fb0906f04ea77124|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3f7cefa99191f15496f0d3ade226bbbd3d7d553564caa88d3f6b46a347855b26|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|533235670774b13c1d53c3a948671c061ab3e7047f5984738a10f931c353a26e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|efcaba9c2e1ebb49304eb29ba0b6efb07ecae3626bcfd45aa65993d9b9e225ba|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|94609e894a1dfb36dfb6914860d88c817c9e7a85fe62c58c4fd5699b39d8abcc|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cbc097fc575124bf3fe859944735b3a3b2e39096f4b2d5e023dc8ccc17969619|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|81df3a697bf7dd3ed240558b0acbc75c23a2007823c718a4816df099ba37f9d9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|204ddbc49cdff4b4c5cb23a32d09d8450175f5799a0d4cc5ea2667d8b3b17470|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2af9d8288ae4e94243f0cf782342d05a12aa421c51f70afc0afe732c4048fd2b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2dd008738f3940a04d1153c732b5d1b175092fad3b8da91ef33b42e0e03901f3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f22570aad1903ed6163f6e89f5310baf80570ce3e2e9c28e39c4167f4c0cf772|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8dd0a48c87fac2ace3a9fcde1a14d71fd32768ef083bdaf48b29de65acf9f48b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|75679ce239d3ce8e74c4f26c103bae139e537031e5325eb8990dfa3ddc12e8c3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3dc7b86671cf9fec0245f0fffd06b66d16da6744d7a3e0f4709e88bc595994e6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e653703cded0a2b3699f98171ae23be5e7ba08c0bff7e52f75b0480c1fa12a46|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|19a70bbea8b229a95bc6869505a51b2f9e967cb517dc9f2861643b0f2364e911|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f15147883cd8c2677e21b1c1bb5df7dfcd8a055981fd7a00f47e5d8a786c1f52|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2f737e2b7d514b28cc3952a6c08a5167d340360c34538a4ae2bd58564f6414dd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|15f65c810e211a65146d06a6d65fcbcaf85e6da19ee690dbad0f51c73118fa68|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b3be253e470efafb229050578a29d0cf3a5e5cae3ef1ff3092bb0de2f3786dae|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce3d20853bb62be8165e7f2324e838b2fd1226dc5116730e91848438471ce19d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|678d46728449ac546a4004d223001272700b202351108a45187812d1bdc28527|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b985ed019ab0ba9aa2ef1a2cdadc37330da25a134381509c2265d32cad6e0374|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73d83e5c836b901ab0eb8412201f08c67a25e22afea9dc2f11e5d5a4cbab804a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|658e15452a254d326e1c63f296bc405f1c24827039c5a0945cc0c301f467358b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9917106fcd391a88966505f4154da77b385f61074f7f42391c15790b14418c0e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4af8865b38344a91aca51f975daac87055bc5248b66b607c654b6bcf9c8391d0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8f9fc6f0e5abaeda06e61211e9dec4471b1a0880453938f4b09c164cd710b1e2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0432a79a989ae0271023d20b4bb9675b6e2e074b50e938b41d163645f49e668e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|89bbac1d2a068802863c6ba671764dec7d744c64b36520919fe91586e0b59905|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7a08540553b369d72a79b9097d69d17dbe1e56aeec99e0ad7a18b5a2d43da5f1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|592357576d0989eaa1f13280103e0e2dd41cebda5c056f9bbd1d7d42b15e16ec|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|85eb8bada018ac07d0746785f2c487c9a719d0074308093fbc02445143682773|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9aa36d145de0eaf0aa4f4b96ce97bb7ff98b220226840ff0c09c7d562794ae26|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c62ffe7532f7256e614dde6a0692cce77b1a4a6488503bc3387ff53660a8ea43|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|78f4bfae555d849caea904b6902f448a0b7546f0d434783e55fbc888f686cec3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|44573f7a51f4e8fb039fe2393dd676719c73ff229bd828f82556d50c5c90505d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
+							"SL.18.region_keys":
+							[
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"history_list_is_closing": true,
 							"rulers":
 							[
 								80
@@ -673,31 +1794,283 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6716.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "interface.py",
+					"buffer": 3,
+					"file": "backtest.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2853,
+						"buffer_size": 5977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								734,
-								734
+								1573,
+								1573
 							]
 						],
 						"settings":
 						{
+							"SL.17.region_keys":
+							[
+								"SL.flake8.Highlights.|6b1bfd10d1022c7578d29b472b4e300a6f963df08328112f7100906b9474cf1c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|542f74beccce8d6e76abc56c4bc3b42143bb5b4906076a1a832afa13998e594d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e22d65065c88bda5ae5662961007640ae40998cd75f6454e28a0b0ff0ae0e884|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6a2cf760902778df4d902f8ceab6592ba9756095fa00ee3306c21aaa25c8d64f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c86b7a372e0601d50821fe06bcbe883f5fdc3fc75c00be9174f790354f7cb20a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|74b6d70bf2ea8255e402f9450c6cfc5c61d6cf87ddf03bf701bb31f61d0ca114|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|0018d9e888abcca7967170eb00cc85abf5c2580a9eaf0e511047d178978e337d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0863d670013d8804f985df2c848bc027f375b1b0dae11cfecc93c525f3f40898|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5e50e3f80121a09600b405b62a2378a466381a90c65015875fc16cbf861dcab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|78a5b1488aef2d7d36dac7798a853a385d78ccfa3d2534a95658e157e737a49c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0462af1abb8622bc522d0d1cc675ab557f6e71b79e1931e8a3d7b622dbee591a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|16a1f9784f923ad99d8ab346d3b24847fd8f879c403077380faaa4fed430a679|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|32743e08a46098357c8875509553f6ca842821711c2ab8052a28687de446e446|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|65932d65567958d6acd2e116d557325da40fc813775e446ee7041d22824c9c30|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3b03d49179d8184be4dcf57358d8ced4e3dd92f91e4a66ac86f2e561e05beed0|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5a6af82abc0c939b049b13e68a57760685d238e1a37287c2ca5c898f4fb36342|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e0b8f65260f495dc08e7d4ce8a4caa728bdc004c8bda01e989af7691d0f7d80b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|acbb212cb33e99d6cc7baf47fa38b3aafca2627e5b6dd191381d6eed18f211de|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|be5b619672c2f7a83250336bcd357568ba06961c956a2b4695429ee9e69853e8|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2d60d982b77021c62cc4260ca924866b26d8dc9f87f98149d4843502d0b181db|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bac87da45f78a6b4e8d00346baed4abdf02489a75665643f5038502d50103351|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fae323ce39206631d0a8a5913e0b4725965affd24aec469a80905e991018f29c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6a93fa76d00959276620baeb940c5072de988ac956e64b1d25964498e4b9bec3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b654f858c5bcccb4a9e44a4659513051ce8d91f7d73f2e909e0ac2cbfed49a7c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc5b028a47d8ed793fd96a44743f73a6b696aa91f6cfdfa4bdda1026e4600808|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|55811164f83d4fbc4aac6d93b3c5c27785e228c1efe3e6f98de63ab5a453b28d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ad1a2ec48ba2684c261d70faab67039d561db8d4fedf9af2cf0a37a59ba1f9cb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|43464065b8c5b7342e9a8d8a7655cef160f2a488aff23a249a4098a5243c7104|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e0a9a7717c1c2c26ffe2925f200c9225327906a5a1c0bc20d67e609d507490e4|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1fb8dc5c4d607f4e44ff794be3e55f4071d53404cfb8d89b1f83691c05ca08b8|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f1df08b53c39c44f8f5907d5d617165982b0fcaf1950a2418450f049e54e99cd|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2cf133da61e56ff520a89622c0d0beb3ceb0635f43de71c65aa137a5a3eb895e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7f4e10cb854449ffc383d918b828791b52f2a202815b96d23965e1d5ae3aacd7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|564e81385150221b7fd42ea11bc507e60f5d375ab612048a353d7594aa3a4962|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|36b72c8769eb9c9b3d1b0bb41b9f29612d7df901e94d1814b61b7733958f7b78|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|28411fec7380cebc4893be66c21b39cd81399f7b8e3a65aaefcfc58de05362b2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0bc4eb57104fa71810a4b17131736ac05aab8d0ef4167c3335975f250bb711b6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7e55346b0b992c04fb34ade6bcafabb642524c9b5b5827da465d725eda8c6640|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d75e11b5c5bbf2b4cd02ae3ab63785e9575e2e0cf4b74adb17a06d4744e4a602|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|31f97310b0c0e68520db3f802f67dd4150c2ad3d730d717b8c6c8f62abbabb58|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|67c8f1f04239e141bc23ddb71f11af96c7aa9ea169fac78b4078f542bfff5eff|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7790a4fd7f89f7429268ed773000d1bb12415a58c7e8f725534088eb5e81f0a4|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f4b1621303de9b6df6493649319574dc24be7b8404ebe17bddf3b3b915eebc71|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5e6813e12129e9a0d48f00359a3ab43ab3c258e00d4edbe74a01db7a940ff1fb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e4e9b2a0bedb4b1e4f1f4ca8d0be920db07324cff56197538dd0a504766b0f44|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc184c4fa475699d89a2c997e33abbe6a85f624348aef79a89cf5ada548e4061|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cf2a42495473d4c66d45a5a9198ddfd15073ae359b93d699f826498008b75732|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2d43ff155987e3a0882438809eaabcd2402c89a0c417c762a50775d8db7a621e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|17fc9f2df8ca19a94c641cea865fd3bfbbcb271cff90e8401622ce217e883b95|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|843b1b62b0c7a1701c0451ac2b92763ef83e8ed6d186612d4a2a4f68933dbdf1|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|724d9949cfabfd7be5a806e55f01b308d5b936ca3ba4dc869553dd6df76d06c2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f6802e7bf2bfa729048a52353f95ea9d10db581e0a3155b6643c152737d96d9c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6a71e3213f6a43f62acc9e9da55beb7e1d7d48c0a561c9fa53dc28e81bcbb213|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d2b8896691addd543e96fdeaccf481e499047afffd02e1dce950874adc68c27b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|28b42910436568cd3c6cc604a30a349f3f6efcef6c8ef7363b556e352dcb7b64|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7a32849364b242aa173daa301096ed8b0bcc721bb646599e9ada3305fc093d12|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|68f65f1c636dea7314870f2d64e0c20f9daadfebb5799943abbb427a5ca594d3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d34a4c87b73ada55c296b1724a0cf21ce6f729212af65dae11aef6ee96643038|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5f5a59a037c1d558338c2aafb0d2f41844f037c112f767a93a1890e1e2a731ce|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|050457e78cb714c7ab24c9a5bb8b14d2b0de676e97e6a728da10144a121ac217|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5b3a183d582e6186cd56aa4b07805cd4700fa1b015464329415574199ea5c80d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a20581156941ce64615129f6ae53c1e811e684d028c910d6f3fc9cab367991e1|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b12613849dd00f3c851e279e475368848910133a9d84d5b5a385516f881406d1|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5e275fb22033b29e894ca6ec21c4a237f60a7752ca4039ee18f1368c961542b2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|daf3c1b77af440bdfecc2fc6fd7c1d020ac7705314a11734988606525d4c8951|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4fa32245ffd2837078e925121b75b25ba430ca22388a948ace48f5d9ca69ea1a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|745c22436cfa2fb6ff90e2881c1aedf3f634ae475423687a9e087587c1469a86|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ff26d418e7c341248858411de5359f5a4639894823e52f3f352854e70b1a417e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|34c0405f4d4adfcc5cfcf9f229e808a8a7f7d5043932f8c28048dceca0e35c03|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|260cb8637b6d0edf48dd22042ca142d70f0b0a54dc44bdd3979edb1365bea215|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|3d87c658f3f7e961bfe92643fc9258feb7a8770b93d005882121422bcf73ed35|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e0a0d2b4743d59bf1f68c0d0e1e44a78430aeebccd2f5799a53842759c27aa66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9af240652e2869efa3559cedb1c0f909ad0f44cb395cd2af2e1a30abed4fcc89|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e069cc90924c0c379ef1ac9f92f9437671d8ef802e81957574faf0eb4c8c7f02|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bb9f562bc38e7522af089acbb51f4adb057a86567c8b0530c9623b6497343fff|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|50d70b48e0eced5fdff45e53ca4bd0a30b145110354bf2d5810d262f4988072f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9664d264341d97efd8ac3f8b5d6396cc33b2cbbf190a6131a1b557456c851815|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|870a626f24c7cc3ceed74c57babab6ce41dcf207f0dad3227d5c439f4320a091|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ae109bffeeb12ad400c4c83312591c8cd8d985504012a40f84a814516306e45a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c8435abfb6c5fc299b9414dbdace388efb424d46791e79bc4c71b081d9f7ffd1|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|485735192fb1a54a82a3173b25ad5d6f4c3449a723c024397bb198006348ac0c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|762c25616ca28f14e3baea0a87bd211b3a071802dd95bfa3fe6e43229a3a2f8a|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.83.region_keys":
+							[
+								"SL.flake8.Highlights.|f1df08b53c39c44f8f5907d5d617165982b0fcaf1950a2418450f049e54e99cd|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e4e9b2a0bedb4b1e4f1f4ca8d0be920db07324cff56197538dd0a504766b0f44|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|28b42910436568cd3c6cc604a30a349f3f6efcef6c8ef7363b556e352dcb7b64|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3b03d49179d8184be4dcf57358d8ced4e3dd92f91e4a66ac86f2e561e05beed0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b654f858c5bcccb4a9e44a4659513051ce8d91f7d73f2e909e0ac2cbfed49a7c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5e275fb22033b29e894ca6ec21c4a237f60a7752ca4039ee18f1368c961542b2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7790a4fd7f89f7429268ed773000d1bb12415a58c7e8f725534088eb5e81f0a4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ff26d418e7c341248858411de5359f5a4639894823e52f3f352854e70b1a417e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e0a9a7717c1c2c26ffe2925f200c9225327906a5a1c0bc20d67e609d507490e4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|485735192fb1a54a82a3173b25ad5d6f4c3449a723c024397bb198006348ac0c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6a71e3213f6a43f62acc9e9da55beb7e1d7d48c0a561c9fa53dc28e81bcbb213|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e069cc90924c0c379ef1ac9f92f9437671d8ef802e81957574faf0eb4c8c7f02|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|32743e08a46098357c8875509553f6ca842821711c2ab8052a28687de446e446|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f4b1621303de9b6df6493649319574dc24be7b8404ebe17bddf3b3b915eebc71|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0018d9e888abcca7967170eb00cc85abf5c2580a9eaf0e511047d178978e337d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|68f65f1c636dea7314870f2d64e0c20f9daadfebb5799943abbb427a5ca594d3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6a2cf760902778df4d902f8ceab6592ba9756095fa00ee3306c21aaa25c8d64f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|542f74beccce8d6e76abc56c4bc3b42143bb5b4906076a1a832afa13998e594d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2d43ff155987e3a0882438809eaabcd2402c89a0c417c762a50775d8db7a621e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6a93fa76d00959276620baeb940c5072de988ac956e64b1d25964498e4b9bec3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7e55346b0b992c04fb34ade6bcafabb642524c9b5b5827da465d725eda8c6640|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0863d670013d8804f985df2c848bc027f375b1b0dae11cfecc93c525f3f40898|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|16a1f9784f923ad99d8ab346d3b24847fd8f879c403077380faaa4fed430a679|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|34c0405f4d4adfcc5cfcf9f229e808a8a7f7d5043932f8c28048dceca0e35c03|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2d60d982b77021c62cc4260ca924866b26d8dc9f87f98149d4843502d0b181db|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0bc4eb57104fa71810a4b17131736ac05aab8d0ef4167c3335975f250bb711b6|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d2b8896691addd543e96fdeaccf481e499047afffd02e1dce950874adc68c27b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|724d9949cfabfd7be5a806e55f01b308d5b936ca3ba4dc869553dd6df76d06c2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4fa32245ffd2837078e925121b75b25ba430ca22388a948ace48f5d9ca69ea1a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ad1a2ec48ba2684c261d70faab67039d561db8d4fedf9af2cf0a37a59ba1f9cb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a20581156941ce64615129f6ae53c1e811e684d028c910d6f3fc9cab367991e1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|65932d65567958d6acd2e116d557325da40fc813775e446ee7041d22824c9c30|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7a32849364b242aa173daa301096ed8b0bcc721bb646599e9ada3305fc093d12|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|36b72c8769eb9c9b3d1b0bb41b9f29612d7df901e94d1814b61b7733958f7b78|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c86b7a372e0601d50821fe06bcbe883f5fdc3fc75c00be9174f790354f7cb20a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|1fb8dc5c4d607f4e44ff794be3e55f4071d53404cfb8d89b1f83691c05ca08b8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|67c8f1f04239e141bc23ddb71f11af96c7aa9ea169fac78b4078f542bfff5eff|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bac87da45f78a6b4e8d00346baed4abdf02489a75665643f5038502d50103351|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1bfd10d1022c7578d29b472b4e300a6f963df08328112f7100906b9474cf1c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|74b6d70bf2ea8255e402f9450c6cfc5c61d6cf87ddf03bf701bb31f61d0ca114|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5e6813e12129e9a0d48f00359a3ab43ab3c258e00d4edbe74a01db7a940ff1fb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|31f97310b0c0e68520db3f802f67dd4150c2ad3d730d717b8c6c8f62abbabb58|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|acbb212cb33e99d6cc7baf47fa38b3aafca2627e5b6dd191381d6eed18f211de|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3d87c658f3f7e961bfe92643fc9258feb7a8770b93d005882121422bcf73ed35|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|870a626f24c7cc3ceed74c57babab6ce41dcf207f0dad3227d5c439f4320a091|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5b3a183d582e6186cd56aa4b07805cd4700fa1b015464329415574199ea5c80d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|28411fec7380cebc4893be66c21b39cd81399f7b8e3a65aaefcfc58de05362b2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc184c4fa475699d89a2c997e33abbe6a85f624348aef79a89cf5ada548e4061|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fae323ce39206631d0a8a5913e0b4725965affd24aec469a80905e991018f29c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|762c25616ca28f14e3baea0a87bd211b3a071802dd95bfa3fe6e43229a3a2f8a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|260cb8637b6d0edf48dd22042ca142d70f0b0a54dc44bdd3979edb1365bea215|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|78a5b1488aef2d7d36dac7798a853a385d78ccfa3d2534a95658e157e737a49c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cf2a42495473d4c66d45a5a9198ddfd15073ae359b93d699f826498008b75732|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f6802e7bf2bfa729048a52353f95ea9d10db581e0a3155b6643c152737d96d9c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|50d70b48e0eced5fdff45e53ca4bd0a30b145110354bf2d5810d262f4988072f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e0b8f65260f495dc08e7d4ce8a4caa728bdc004c8bda01e989af7691d0f7d80b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|be5b619672c2f7a83250336bcd357568ba06961c956a2b4695429ee9e69853e8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d34a4c87b73ada55c296b1724a0cf21ce6f729212af65dae11aef6ee96643038|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c8435abfb6c5fc299b9414dbdace388efb424d46791e79bc4c71b081d9f7ffd1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d75e11b5c5bbf2b4cd02ae3ab63785e9575e2e0cf4b74adb17a06d4744e4a602|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0462af1abb8622bc522d0d1cc675ab557f6e71b79e1931e8a3d7b622dbee591a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9af240652e2869efa3559cedb1c0f909ad0f44cb395cd2af2e1a30abed4fcc89|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot",
+								"SL.flake8.Highlights.|daf3c1b77af440bdfecc2fc6fd7c1d020ac7705314a11734988606525d4c8951|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5f5a59a037c1d558338c2aafb0d2f41844f037c112f767a93a1890e1e2a731ce|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2cf133da61e56ff520a89622c0d0beb3ceb0635f43de71c65aa137a5a3eb895e|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|17fc9f2df8ca19a94c641cea865fd3bfbbcb271cff90e8401622ce217e883b95|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bb9f562bc38e7522af089acbb51f4adb057a86567c8b0530c9623b6497343fff|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|050457e78cb714c7ab24c9a5bb8b14d2b0de676e97e6a728da10144a121ac217|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5e50e3f80121a09600b405b62a2378a466381a90c65015875fc16cbf861dcab|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ae109bffeeb12ad400c4c83312591c8cd8d985504012a40f84a814516306e45a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|745c22436cfa2fb6ff90e2881c1aedf3f634ae475423687a9e087587c1469a86|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|55811164f83d4fbc4aac6d93b3c5c27785e228c1efe3e6f98de63ab5a453b28d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|dc5b028a47d8ed793fd96a44743f73a6b696aa91f6cfdfa4bdda1026e4600808|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|843b1b62b0c7a1701c0451ac2b92763ef83e8ed6d186612d4a2a4f68933dbdf1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|43464065b8c5b7342e9a8d8a7655cef160f2a488aff23a249a4098a5243c7104|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7f4e10cb854449ffc383d918b828791b52f2a202815b96d23965e1d5ae3aacd7|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5a6af82abc0c939b049b13e68a57760685d238e1a37287c2ca5c898f4fb36342|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b12613849dd00f3c851e279e475368848910133a9d84d5b5a385516f881406d1|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|564e81385150221b7fd42ea11bc507e60f5d375ab612048a353d7594aa3a4962|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e0a0d2b4743d59bf1f68c0d0e1e44a78430aeebccd2f5799a53842759c27aa66|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e22d65065c88bda5ae5662961007640ae40998cd75f6454e28a0b0ff0ae0e884|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9664d264341d97efd8ac3f8b5d6396cc33b2cbbf190a6131a1b557456c851815|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 503.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Dedale-PC/Google Drive/Market/java/ig-webapi-java-sample/ig-webapi-java-client/src/main/java/com/iggroup/webapi/samples/client/rest/Constants.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "interface.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"SL.18.region_keys":
+							[
+							],
+							"SL.19.region_keys":
+							[
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
 							"history_list_is_closing": true,
 							"rulers":
 							[
@@ -711,28 +2084,42 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "rest.py",
+					"buffer": 6,
+					"file": "indicateur.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19048,
+						"buffer_size": 7848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14655,
-								14655
+								7325,
+								7325
 							]
 						],
 						"settings":
 						{
+							"SL.19.region_keys":
+							[
+							],
+							"SL.20.region_keys":
+							[
+								"SL.flake8.Highlights.|bc10b439a0420fe337a7b3efaaa6595366fa9466601e53e8be96023dbbf0d065|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb347fc5022049d62985f6e3615c2403dec1efd17936ac96a88d8de3fa30954|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a880a33a5247b4fe2c8c8b6a26f20dc8cfac991fa7d5127fda91d752de70c2fc|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|be86a5d6932867f8aa35402cd47056e71ee8ce982237660bf02ece262e0474c4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|133f0c7d5cd50cc238d5178dfa3d7ae70b5a8452e10a791ed249ba51e7788ab8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|ab2b1026746481ff4de6b58641ae2138d84170b458876d9c9e3c2423cad465c5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.whitish|dot"
+							],
 							"auto_complete_triggers":
 							[
 								{
@@ -746,16 +2133,130 @@
 								{
 									"characters": ".",
 									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
 								}
 							],
+							"history_list_is_closing": true,
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1022.0,
+						"translation.y": 2011.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Var.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"SL.20.region_keys":
+							[
+							],
+							"SL.21.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.22.region_keys":
+							[
+								"SL.flake8.Highlights.|50f302c16a40e884df188b2cae7965274e4f0d4cfc4405cf69ef3195d4dd7251|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|b1cb7a06b861b3131508b791be5bc32bd139de68ee1ebc0e51ba3f9bf0ec3277|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|197ce68a9ba20c3a67c9ea3e20a8d19d9376fa9117bdfe1f33a58304748c74a0|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9a396b94cc3ed0cf1c7b60877cae769394dc6eb71f45f071ef15ef3561692a58|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|13a504ae4b7b8654ec2a82bc18833df01abbaf244b4704a3cca559796d9365d2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|46dfa40c11d8eef714e70ba9ed391aed50c0ad38ad329e019e7b07e0d81220f3|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|04284c9b072157052153a98667bfc0cfb58a89a13f9c0d16b69cec0b279f20c8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1144fa7bf66b712cfc0f6cb4fd2ab8762f21ccaade2558b9e1c4bf49f0031f8|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ad0c205b2df7ec6a09f33d4c18d7fd6fe553b4aa7224214cd4280c9e7645791a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f196b619747cb5a1ad1c21f7513e64b3de186c3769756e340a33f889288636d5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c6b4b6c6ac7c35603ead9e7387d453497cf49bd773ace904c9055cb0b72b6994|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2b6875a8ca604370afced39049c12b7003d0a83ac02ca3179e68221a01b58426|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|434dcfd1d3c5ee1491f81b08afdbf514b6b79b99dd357c33618c6049b28d380f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6da4d364cc13bae4c87031f4cea916a5f0ea65c3990252ad7d144c7ac6e731c9|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fa78b1394a9dd60837881e82f732b5f9a422afade2476bb50777b31dd69aa839|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1c24906c313c79022c759a835ea958e4b969b21439f3347962902ef11d0eed0b|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b7db574272af438f6629f3494f1f03e5ff3d5558817d96411d0cfcdad13c116c|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|286662b6dfebce570fe8d0790a68a153dcbc8af34f7c9410cd7a1aa8174c75d5|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|98b21b212417b7b94584c931837ae049dd9c108140703f96b44bfe8052fee504|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|de314d1553009d0fa961af9e460578bfb9ddfbb09f23817c4423e58a41ec5efb|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4f4b103912b7fcffe3178a34d4af2b38feea1c7981509a1db623691ce6eb8877|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|374d918b9a5bc19c71c201a7723da20595e0005945e8061cf37c2f8b0b85f112|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3da521e273d7a069434f2c29485ecf205753996478f9c0f04d30a4bbe626d18f|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e2e0291051dd8b55fe5f92e9044f460ec5a0405819b9a07b2c9d8f291a348bde|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|36b3e64bbd86ea9681fca9136ed22d78600567de7a56c37be90f4c7034cb2718|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3a5339acd1adae9fc9a8936ef4cfa9bad03757aa11dfba39a30e37a757afb7a2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2064e4df4099b1e20fcc343fa2e5873f2f643e13b4f4055e7fb0da2d402657d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|edee6dc81e416e8a56906810b1c186758f762c40adea8fe11e0df557c1fe6c68|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5ff92d38e55c59000a0d867a22f97c8876d2ee087321b2e96d20a124bd9ff905|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6f51f9040a1a1790a3bb7c15b723508a5ce1313d4831a074631e9f8a87317a3d|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ede7dbb7f663d7f8b3842ef6b9616c629b88bfca70504d8d3fa155c0063ccf87|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|12786593ad35fbcad121212012a3db612f4412491cb76f448e41c255a53d3246|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|848cf911a596dd0db355774a654fff3d4d4ceb77650eefae5f056404f571660a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|611b9278f8979c8099dcb72872b83a804dc4168a15db7251ff8ef6a754576372|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0a5a0c2205ddbfb15463e4d585e2fcdb98590322203b45c6225a828878e24acc|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ea265e007b26264c4f9285734ac9b7049c0daa92ec41bd317e5f483694b30e48|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4493605890aea50ef3a4b207afbfcb10e9143b41e7ba9195412aa8f8f3750ea4|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|53d76ee47d98c5092560595edc19b2c155bb0fd56ef5b883a07e2656f6d3e4e2|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|fd1898cfce80a8b3f9a0d6193510fd16c5828fd092a285d99edda5a81c74db29|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|79337308473b58d3cac9c6fba6483aa4110eda1d24ee2e092e5a1cfaf9f35f81|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|39823895b070ac79a6f3f7aed6df5bde20754dba94095902546f77043f8298bc|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|18c976b9f30f879e0ab305115710fd2df32a1f983a934f97c4896fed7db5d43a|region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter|32"
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"history_list_is_closing": true,
+							"show_definitions": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 14.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -765,129 +2266,64 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
-					"file": "indicateur.py",
+					"buffer": 8,
+					"file": "activity.log",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3277,
+						"buffer_size": 3055,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1190,
-								1190
+								3055,
+								3055
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
+							"SL.21.region_keys":
 							[
-								{
-									"characters": ".",
-									"selector": "source.python - string - comment - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								}
 							],
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"SL.22.region_keys":
+							[
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Var.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1416,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								345,
-								345
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": ".",
-									"selector": "source.python - string - comment - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								}
-							],
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 308.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "sable.py",
+					"buffer": 9,
+					"file": "Todo.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 929,
+						"buffer_size": 946,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								37,
-								37
+								946,
+								946
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
+							"SL.22.region_keys":
 							[
-								{
-									"characters": ".",
-									"selector": "source.python - string - comment - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								}
 							],
-							"syntax": "Packages/Python/Python.sublime-syntax",
+							"history_list_is_closing": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -902,7 +2338,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 61.0
 	},
 	"input":
 	{
@@ -928,7 +2364,7 @@
 		"cols":
 		[
 			0.0,
-			0.504368839388,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -940,7 +2376,7 @@
 	"menu_visible": true,
 	"output.SublimeLinter":
 	{
-		"height": 103.0
+		"height": 828.0
 	},
 	"output.SublimeLinter Messages":
 	{
@@ -958,7 +2394,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 42.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -968,8 +2404,12 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"backtest.py"
+			],
+			[
 				"",
-				"rest.py"
+				"Todo.txt"
 			],
 			[
 				"in",
@@ -993,37 +2433,26 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 380.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"_forward_update_message"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"selected_group": 0,
 	"settings":
 	{
-		"last_automatic_layout":
-		[
-			[
-				0,
-				0,
-				1,
-				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
-			]
-		]
 	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 123.0,
+	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
