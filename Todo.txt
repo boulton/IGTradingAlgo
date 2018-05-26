@@ -1,5 +1,19 @@
 ﻿
 
+Methodes terminé :
+
+INTERFACE
+    main
+    loop
+    widgetSetp
+    textRefresh
+    connection
+    deconnection
+
+REST
+
+
+
 Idées:
 	- Reduction Endomorphisme sur Crypto selon similarité des prix
 	

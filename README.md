@@ -36,18 +36,18 @@ ainsi que les trade passé
 
 #### Exemple : 
 
-![](./readme/AUDJPY18-01-01.png)
+![](./Documentation/AUDJPY18-01-01.png)
 *  resultat d'un backtest sous excel Trade/Prix
 
 
-![](./readme/backtest.png)
+![](./Documentation/backtest.png)
 
 * issue des trades d'une stratégie sur une journée
 
 ## Auteurs
 
-- **Boulton (Florian GEFFRY)**
+- **Florian Geffry (Boulton)**
 
 ## Licence
 
-Ce projet posséde une licence MIT License -  ci joint : [MIT-license](LICENSE.md)
+Ce projet est régie par une licence MIT -  ci joint : [MIT-license](LICENSE.md)
