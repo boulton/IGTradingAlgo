@@ -1,36 +1,30 @@
-2018-05-26 14:05:00,304 :: INFO :: AUTHENFICATION
-2018-05-26 14:05:00,317 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
-2018-05-26 14:05:01,216 :: DEBUG :: https://demo-api.ig.com:443 "POST /gateway/deal/session HTTP/1.1" 200 251
-2018-05-26 14:05:01,229 :: DEBUG :: Headers: {'IG-ACCOUNT-ID': 'XBU0Q', 'Authorization': 'Bearer 876de535-2d69-4cee-b100-fbe99a306d88', 'Version': '3', 'X-IG-API-KEY': 'cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2'} 
-2018-05-26 14:05:01,231 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
-2018-05-26 14:05:02,208 :: DEBUG :: https://demo-api.ig.com:443 "GET /gateway/deal/prices/CS.D.AUDJPY.MINI.IP?resolution=MINUTE&from=2017-12-31T21%3A02%3A00&to=2018-01-01T19%3A02%3A00&pageSize=100&pageNumber=1 HTTP/1.1" 200 166
-2018-05-26 14:05:02,210 :: DEBUG :: ----METADATA----
-2018-05-26 14:05:02,210 :: DEBUG :: {'allowance': {'allowanceExpiry': 604799,
-               'remainingAllowance': 10000,
-               'totalAllowance': 10000},
- 'pageData': {'pageNumber': 1, 'pageSize': 0, 'totalPages': 0},
- 'size': 0}
-2018-05-26 14:05:02,211 :: DEBUG :: ----FIN METADATA----
-2018-05-26 14:05:02,212 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
-2018-05-26 14:05:02,490 :: DEBUG :: https://demo-api.ig.com:443 "GET /gateway/deal/markets/CS.D.AUDJPY.MINI.IP HTTP/1.1" 200 747
-2018-05-26 14:05:02,493 :: ERROR :: erreur pas de preload 'NoneType' object is not subscriptable
-2018-05-26 14:05:02,493 :: INFO :: REFRESH
-2018-05-26 14:05:02,494 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
-2018-05-26 14:05:02,654 :: DEBUG :: https://demo-api.ig.com:443 "POST /gateway/deal/session/refresh-token HTTP/1.1" 200 147
-2018-05-26 14:05:02,656 :: DEBUG :: Headers: {'IG-ACCOUNT-ID': 'XBU0Q', 'Authorization': 'Bearer 49efe31a-0db8-42f3-94cf-25718135cbdb', 'Version': '3', 'X-IG-API-KEY': 'cbcf3ac23f07eef2ba494576a6fb38dde0a7ebd2'} 
-2018-05-26 14:05:02,658 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
-2018-05-26 14:05:02,876 :: DEBUG :: https://demo-api.ig.com:443 "GET /gateway/deal/prices/CS.D.AUDJPY.MINI.IP?resolution=MINUTE&from=2017-12-31T21%3A02%3A00&to=2018-01-01T19%3A02%3A00&pageSize=100&pageNumber=1 HTTP/1.1" 200 167
-2018-05-26 14:05:02,877 :: DEBUG :: ----METADATA----
-2018-05-26 14:05:02,878 :: DEBUG :: {'allowance': {'allowanceExpiry': 604798,
-               'remainingAllowance': 10000,
-               'totalAllowance': 10000},
- 'pageData': {'pageNumber': 1, 'pageSize': 0, 'totalPages': 0},
- 'size': 0}
-2018-05-26 14:05:02,878 :: DEBUG :: ----FIN METADATA----
-2018-05-26 14:05:02,879 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
-2018-05-26 14:05:03,068 :: DEBUG :: https://demo-api.ig.com:443 "GET /gateway/deal/markets/CS.D.AUDJPY.MINI.IP HTTP/1.1" 200 747
-2018-05-26 14:05:03,453 :: DEBUG :: 6178
-2018-05-26 14:05:03,464 :: DEBUG :: TradeTotal 43
-2018-05-26 14:05:13,896 :: DEBUG :: EMA mal formaté :6177
-2018-05-26 14:05:13,896 :: DEBUG :: Time:6178 close,6178 ma:6178 autre: 6178
-2018-05-26 14:05:13,896 :: DEBUG :: arrangement 6178
+2018-06-10 02:01:13,135 :: INFO :: AUTHENFICATION
+2018-06-10 02:01:13,142 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
+2018-06-10 02:01:13,487 :: DEBUG :: https://demo-api.ig.com:443 "POST /gateway/deal/session HTTP/1.1" 200 250
+2018-06-10 02:01:13,493 :: DEBUG :: Starting new HTTPS connection (1): demo-api.ig.com
+2018-06-10 02:01:13,810 :: DEBUG :: https://demo-api.ig.com:443 "GET /gateway/deal/session?fetchSessionTokens=true HTTP/1.1" 200 162
+2018-06-10 02:01:20,122 :: INFO :: b'https://demo-apd.marketdatasystems.com'
+2018-06-10 02:01:20,466 :: DEBUG :: Waiting for a new message
+2018-06-10 02:01:20,773 :: DEBUG :: Server response ---> <OK>
+2018-06-10 02:01:20,804 :: DEBUG :: Received message ---> <1,1|$|$|1528588880000>
+2018-06-10 02:01:20,806 :: DEBUG :: Received update message ---> <1,1|$|$|1528588880000>
+2018-06-10 02:01:24,767 :: DEBUG :: Server response ---> <OK>
+2018-06-10 02:01:24,768 :: INFO :: Unsubscribed successfully
+2018-06-10 02:01:24,768 :: DEBUG :: Connection closed
+Tokens=true HTTP/1.1" 200 162
+2018-06-10 02:01:20,122 :: INFO :: b'https://demo-apd.marketdatasystems.com'
+INFO :: 2018-06-10 02:01:20,122 :: root :: b'https://demo-apd.marketdatasystems.com'
+2018-06-10 02:01:20,466 :: DEBUG :: Waiting for a new message
+DEBUG :: 2018-06-10 02:01:20,466 :: root :: Waiting for a new message
+2018-06-10 02:01:20,773 :: DEBUG :: Server response ---> <OK>
+DEBUG :: 2018-06-10 02:01:20,773 :: root :: Server response ---> <OK>
+2018-06-10 02:01:20,804 :: DEBUG :: Received message ---> <1,1|$|$|1528588880000>
+DEBUG :: 2018-06-10 02:01:20,804 :: root :: Received message ---> <1,1|$|$|1528588880000>
+2018-06-10 02:01:20,806 :: DEBUG :: Received update message ---> <1,1|$|$|1528588880000>
+DEBUG :: 2018-06-10 02:01:20,806 :: root :: Received update message ---> <1,1|$|$|1528588880000>
+2018-06-10 02:01:24,767 :: DEBUG :: Server response ---> <OK>
+DEBUG :: 2018-06-10 02:01:24,767 :: root :: Server response ---> <OK>
+2018-06-10 02:01:24,768 :: INFO :: Unsubscribed successfully
+INFO :: 2018-06-10 02:01:24,768 :: root :: Unsubscribed successfully
+2018-06-10 02:01:24,768 :: DEBUG :: Connection closed
+DEBUG :: 2018-06-10 02:01:24,768 :: root :: Connection closed

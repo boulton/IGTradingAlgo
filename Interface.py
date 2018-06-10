@@ -14,6 +14,7 @@ from tkinter import *
 
 import Var
 from Broker import Rest, Stream
+from Backtest import Backtest
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -86,18 +87,19 @@ class Page1(object):
             self.TextFrame.delete(1.0, END)
             self.TextFrame.insert(END, space.join(texte))
 
-    def connection(self):
+    def connection(self) :
 
         logger.info(self.LStoken['addr'])
 
         Var.price["Date"] = str((datetime.now(dt.timezone.utc)).date()).replace('-', '/')
-        # a regrouper ces codes dans 1 fonctions communes avec streaming
+        # TODO regrouper ces codes dans 1 fonctions communes avec streaming
 
         try:
             self.lightstreamer_client.connect()
-        except:
+        except Exception as e:
             logger.error("Unable to connect to Lightstreamer Server")
-            sys.exit(1)
+            logger.error(e)
+            exit(1)
 
         # Making a new Subscription in MERGE mode
         subscription = Stream.Subscription(
@@ -106,13 +108,13 @@ class Page1(object):
             fields=["BID_CLOSE", "OFR_CLOSE", "UTM"],
             adapter="DEFAULT")
 
-        # Adding the "on_item_update" function to Subscription
+        # Ajoute le "on_item_update" function a Subscription
         subscription.addlistener(Stream.on_item_update)
 
-        # Registering the Subscription
+        # Enregistre lq Subscription
         self.sub_key = self.lightstreamer_client.subscribe(subscription)
 
-        # allowing text view
+        # autorise l'affichage
         self.started = True
 
     def deconnection(self):
@@ -121,13 +123,73 @@ class Page1(object):
         self.started = False
 
         # Unsubscribing + Disconnecting
-        self.lightstreamer_client.unsubscribe(self.sub_key)
-        self.lightstreamer_client.disconnect()
+        try :
+            self.lightstreamer_client.unsubscribe(self.sub_key)
+            self.lightstreamer_client.disconnect()
+            self.app.destroy()
+        except:
+            # Cloture Fenetre Tkinter
+            self.app.destroy()
 
-        # Cloture Fenetre Tkinter
-        self.app.destroy()
+class Console(): #TODO a perfectionné
 
+    def __init__(self):
+
+        self.started = False
+        self.epic = Var.epic
+        self.timing = "SECOND"
+
+
+        print("----Trading Console----")
+        ep =input("On change l'épic ?")
+        if(ep == "y" or ep == "Y"):
+            epic = input("L'épic : ")
+            self.epic = epic
+
+        rep = input("Start Lightstream ?")
+
+        if(rep == "y" or rep == "yes" or rep =="Y"):
+            self.connection()
+
+        logger.info("END")
+
+    def connection(self):
+        ig = Rest.ig()
+        self.LStoken = ig.streamingToken(Var.data)
+        self.lightstreamer_client = Stream.LSClient(self.LStoken['addr'], "", self.LStoken['user'],
+                                                    self.LStoken['password'])
+        logger.info(self.LStoken['addr'])
+
+        Var.price["Date"] = str((datetime.now(dt.timezone.utc)).date()).replace('-', '/')
+        # TODO regrouper ces codes dans 1 fonctions communes avec streaming
+
+        try:
+            self.lightstreamer_client.connect()
+        except Exception as e:
+            logger.error("Unable to connect to Lightstreamer Server")
+            logger.error(e)
+            exit(1)
+
+        # Making a new Subscription in MERGE mode
+        subscription = Stream.Subscription(
+            mode="MERGE",
+            items=["CHART:" + self.epic + ":" + self.timing],
+            fields=["BID_CLOSE", "OFR_CLOSE", "UTM"],
+            adapter="DEFAULT")
+
+        # Ajoute le "on_item_update" function a Subscription
+        subscription.addlistener(Stream.on_item_update)
+
+        # Enregistre lq Subscription
+        self.sub_key = self.lightstreamer_client.subscribe(subscription)
+
+        # autorise l'affichage
+        self.started = True
 
 if __name__ == '__main__':
+
+    # Backtest.main(Var.D1, Var.D2)
     root = Tk()
     Page1(root).main()
+
+    # Console()

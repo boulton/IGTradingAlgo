@@ -12,13 +12,13 @@ logger = logging.getLogger()
 
 class strategie():
     """	regroupe les strategie d'achat/vente
-                                                                    temps = YYYY-MM-JJTHH:MM:SS(datetime)
+        temps = YYYY-MM-JJTHH:MM:SS(datetime)
     """
 
     def __init__(self, BidAsk, temps, Price_0, backtest):
 
         self.pauseordre(temps, backtest)
-        self.maEmaCross1(BidAsk, Price_0, backtest, temps)
+        self.movAvgCrossEma(BidAsk, Price_0, backtest, temps)
 
     # self.balai(BidAsk, Price_0, temps, Backtest)
 
@@ -47,58 +47,7 @@ class strategie():
                         Var.ordrePassee = False
         pass
 
-    def simpleEmaCross0(self, BidAsk, Price_0, backtest, tempo):
-        # Brouillon, ne prend pas en compte des limite
-        # "n'utilise" pas le balai
-        bid, ask = BidAsk
-        bid0, ask0 = Price_0  # Prix précedent
-
-        taille = len(Var.ema["valeurs"]) - 1  # <- delai de 5 periode
-        EMAdecalee = float(Var.ema["valeurs"][taille])
-
-        # Crosses condition
-        c11 = float(ask0) <= EMAdecalee
-        c1 = float(ask) > EMAdecalee
-        c21 = float(bid0) >= EMAdecalee
-        c2 = float(bid) < EMAdecalee
-
-        initparam = (tempo - Var.startTime).seconds > Var.algoInitialTime
-        condition1 = initparam and c1 and c11
-        condition2 = initparam and c2 and c21
-
-        if condition1:
-            sens = "BUY"
-            Var.sens = sens
-            Var.makeADeal = True
-            # print(sens + " \n", str(ask) + "\n EMA: " + str(Var.ema["valeurs"][taille]))
-            # self.event(Backtest, sens, tempo, BidAsk, Price_0)
-            Var.tempsaucross = tempo
-
-        elif condition2:
-            sens = "SELL"
-            Var.sens = sens
-            Var.makeADeal = True
-            # print(sens + " \n", "prix: " + str(bid) + "\n EMA: " + str(Var.ema["valeurs"][taille]))
-            # self.event(Backtest, sens, tempo, BidAsk, Price_0)
-            Var.tempsaucross = tempo
-        else:
-            # Garde fou:
-            autre = self.stopAndLimit(BidAsk, tempo, backtest, [])
-            if backtest:
-                Rest.backtest().closeFakeOrders(autre, BidAsk, tempo)
-            else:
-                # BUGGY
-                Rest.ig().closeOrders(dealId=autre[0], orderType="MARKET")
-            if Var.makeADeal and Var.minderniercross >= 2:
-                Var.makeADeal = False
-                self.event(backtest, Var.sens, tempo, BidAsk, Price_0)
-
-        # -----------NEW-------
-        Var.minderniercross = int((tempo - Var.tempsaucross).seconds / 60)
-
-    # print(Var.minderniercross)
-
-    def maEmaCross1(self, BidAsk, Price_0, backtest, tempo):
+    def movAvgCrossEma(self, BidAsk, Price_0, backtest, tempo):
         """ Croisement entre MovingAvg 14 et EMA 500
         """
         bid, ask = BidAsk
@@ -149,9 +98,7 @@ class strategie():
         # -----------NEW-------
         Var.minderniercross = int((tempo - Var.tempsaucross).seconds / 60)
 
-    # print(Var.minderniercross)
-
-    def simpleEmaCross(self, BidAsk, Price_0, backtest, tempo):
+    def bidCrossEma(self, BidAsk, Price_0, backtest, tempo):
         """ Croisement PRIX et EMA a la periode j """
         bid, ask = BidAsk
         bid0, ask0 = Price_0  # Prix précedent a
@@ -243,8 +190,8 @@ class strategie():
 
     def balai(self, BidAsk, Price_0, temps, backtest):
         """ 23/03/2018
-                                        non testé
-                                        cloture les deal existant
+            non testé
+            cloture les deal existant
         """
         DealACloturer = []
 
@@ -313,7 +260,7 @@ class strategie():
         else:
             pass
 
-    # self.archiveSentiment(position, epic)
+    # TODO def archiveSentiment(position, epic)
 
     def profit(self, dico, i, BidAsk):
         profit = 0

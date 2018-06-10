@@ -39,6 +39,10 @@ if PY3:
     from urllib.request import urlopen as _urlopen
     from urllib.parse import (urlparse as parse_url, urlencode)
 
+    import ssl #<- issue de certifi MacosX python 3.6, la certification openssl non linké avec celle root
+    # MonkeyPatching(dernier recours): # ssl._create_default_https_context = ssl._create_unverified_context
+    context = ssl._create_unverified_context() # voir dans _call  (et futur _urlopen("",context=context) )
+
 
     def _url_encode(params):
         return urlencode(params, doseq=True).replace('%2B', '+')
@@ -212,7 +216,7 @@ class LSClient(object):
         # dataobj = urllib.parse.urlencode(body).encode('utf-8')
         dataobj = self._encode_params(body)
         # print("data post : "+str(dataobj))
-        return _urlopen(url, data=dataobj)
+        return _urlopen(url, data=dataobj, context=context)
 
     def _set_control_link_url(self, custom_address=None):
         """Set the address to use for the Control Connection
@@ -516,8 +520,8 @@ def on_item_update(item_update):
     # Calcul d'indicateurs
     Indicateur.indicateur(Midpoint=Midpoint, temps=t1)
 
-
-def streaming(data):
+@DeprecationWarning
+def streaming(data) :
     # OLD /Deprecaded
     epic = "CS.D.EURUSD.MINI.IP"
     timing = "SECOND"

@@ -27,25 +27,26 @@ logger.addHandler(stream_handler)
 
 def main(Date1, Date2):
     # rest.Backtest().Pull(Date1, Date2)
-    histdataconverter()
+    arg = "DAT_ASCII_AUDJPY_M1_201808"
+    histdata(arg)
     pass
 
 
-class histdataconverter(object):
+class histdata():
     """docstring for  csv to  from histdata.com"""
 
     spread = 2  # pip sur audjpy je crois 0.01
 
-    def __init__(self):
-        arg = "DAT_ASCII_AUDJPY_M1_201808"
-        tab = self.csvreader(arg, self.spread)
-        # pprint(bro["snapshotTimeUTC"])
-        self.pricediscovery(tab)
-        df = self.toDataframe(tab)
+    def __init__(self, arg):
+
+        tableau = self.csvreader(arg, self.spread)
+        # pprint(tableau["snapshotTimeUTC"])
+        self.tickAnalysis(tableau)
+        df = self.toDataframe(tableau)
 
     def csvreader(self, arg, spread):  # cleaned
 
-        sample0 = {"snapshotTimeUTC": [], "openPrice": [], "highPrice": [], "lowPrice": [], "closePrice": [],
+        sample = {"snapshotTimeUTC": [], "openPrice": [], "highPrice": [], "lowPrice": [], "closePrice": [],
                    "lastTradedVolume": []}
         with open("Data/histdata/{}.csv".format(arg), 'r+', encoding='utf-8') as outfile:
             reader = csv.reader(outfile, delimiter=';')
@@ -55,20 +56,19 @@ class histdataconverter(object):
                        int(row[0][13:15])])
                 dt = datetime.datetime(tl[0], tl[1], tl[2], tl[3], tl[4], tl[5])
 
-                sample0["snapshotTimeUTC"].append(dt.strftime("%Y-%m-%d %H:%M:%S"))
-                sample0["openPrice"].append(row[1])
-                sample0["highPrice"].append(row[2])
-                sample0["lowPrice"].append(row[3])
-                sample0["closePrice"].append(row[4])
-                sample0["lastTradedVolume"].append(0)
-        return sample0
+                sample["snapshotTimeUTC"].append(dt.strftime("%Y-%m-%d %H:%M:%S"))
+                sample["openPrice"].append(row[1])
+                sample["highPrice"].append(row[2])
+                sample["lowPrice"].append(row[3])
+                sample["closePrice"].append(row[4])
+                sample["lastTradedVolume"].append(0)
+        return sample
 
-    def pricediscovery(self, sample):  # cleaned
+    def tickAnalysis(self, sample):
 
         t = sample["snapshotTimeUTC"][0]
-        # print(t)
         Var.lastDatetime = datetime.datetime.strptime(t, "%Y-%m-%d %H:%M:%S")
-
+        logger.info(sample["snapshotTimeUTC"][0])
         for x in range(1, len(sample["snapshotTimeUTC"]) - 1):
             # logger.info(sample["closePrice"][x - 1])
             bidbefore = float(sample['closePrice'][x - 1]) - (0.01 * self.spread / 2)
