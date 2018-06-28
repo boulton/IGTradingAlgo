@@ -18,6 +18,11 @@ le projet se base sur deux pillier , Backtest et Live Trading
 
 ## Usage
 
+#### `Identifiant IG Markets`
+Les identifiants et autres données sensibles sont stockée dans le fichier Id.py,
+un fichier _Id.py est fourni , a remplir et renommé.
+
+
 #### `Backtest`
 La partie backtest récupere des prix sous format csv (je conseille vivement [histdata.com](www.histdata.com))
 ou depuis le serveur du broker sous forme json (ici IG Markets). \
@@ -36,13 +41,17 @@ ainsi que les trade passé
 
 #### Exemple : 
 
-![](./Documentation/AUDJPY18-01-01.png)
+![Simple UI](./Docs/tkinter.png)
+* Simple interface graphique pour démarrer et arrété le bot/le Stream
+
+![Live Feed log](./Docs/console.png)
+* Log des Tick recu du serveur , archivé dans Activity.log
+
+![Backtest PnL](./Docs/backtest.png)
+* issue des trades d'une stratégie sur une journée
+![Backtest Overview](./Docs/AUDJPY18-01-01.png)
 *  resultat d'un backtest sous excel Trade/Prix
 
-
-![](./Documentation/backtest.png)
-
-* issue des trades d'une stratégie sur une journée
 
 ## Auteurs
 
