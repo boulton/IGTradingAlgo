@@ -92,18 +92,6 @@ OK_CMD = "OK"
 log = logging.getLogger()
 log.setLevel(logging.INFO)
 
-formatter = logging.Formatter('%(asctime)s :: %(levelname)s :: %(message)s')
-
-file_handler = RotatingFileHandler('activity.log', 'a', 10000, encoding='utf-8')
-file_handler.setLevel(logging.DEBUG)
-file_handler.setFormatter(formatter)
-
-stream_handler = logging.StreamHandler()
-stream_handler.setLevel(logging.DEBUG)
-
-log.addHandler(file_handler)
-log.addHandler(stream_handler)
-
 
 class Subscription(object):
     """Represents a Subscription to be submitted to a Lightstreamer Server."""

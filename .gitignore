@@ -1,6 +1,6 @@
 Broker/Id.py
 Backtest/BacktestThielSen.py
-
+Algorithme/ThielSen.py
 
 # Created by https://www.gitignore.io/api/macos,python,pycharm
 
